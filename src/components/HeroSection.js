@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import heroPic from '../assests/profile-pic (17).png';
 import ParticlesComponent from './particles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import globalContext from '../context/global/globalContext';
 import {
   faGithub,
   faLinkedin,
@@ -10,8 +11,11 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 function HeroSection() {
+  const gcontext = useContext(globalContext);
+  const { user, windowWidth } = gcontext;
+  console.log(user);
   return (
-    <div style={{ height: '100vh' }} className="my-12 md:my-14 relative ">
+    <div style={{ height: '90vh' }} className="my-12 md:my-14 relative ">
       <ParticlesComponent id="particles" />
       {/* Hero Pic */}
       <div className="absolute top-6 msm:top-8 sm:top-10 md:top-15 md:right-20 left-1/2 transform -translate-x-1/2 md:left-auto md:transform-none">
@@ -36,14 +40,11 @@ function HeroSection() {
             fontWeight: '500',
           }}
         >
-          Anirban Saha
+          {user.name}
         </h1>
         {/* About Me Description */}
         <p className="font-sans text-xs sm:text-sm font-medium max-w-72 sm:max-w-96 md:max-w-112 lg:max-w-128 text-justify">
-          "Hello there! 👋 I am a B.Tech CSE '26 undergraduate student at Bengal
-          College of Engineering & Technology (BCET), Durgapur, West Bengal. I
-          am very passionate about coding and love solving problems. I am a full
-          stack developer and I love computer science! -"
+          {`"${user.description}"`}
         </p>
         {/* Hire Me! */}
         <button
@@ -60,27 +61,43 @@ function HeroSection() {
         <div className="flex items-center justify-between max-w-48 ms-2 sm:max-w-60 md:max-w-80  mt-32">
           <FontAwesomeIcon
             icon={faLinkedin}
-            size="xl"
-            className="transition duration-300 ease-in-out
+            style={{ color: '#0077b5' }}
+            size={`${windowWidth > 768 ? '2xl' : 'xl'}`}
+            className="cursor-pointer transition duration-300 ease-in-out
             hover:-translate-y-1 hover:scale-150"
+            onClick={() => {
+              window.open(user.socials.linkedin, '_blank');
+            }}
           />
           <FontAwesomeIcon
             icon={faGithub}
-            size="xl"
-            className="transition duration-300 ease-in-out
+            style={{ color: '#6e5494' }}
+            size={`${windowWidth > 768 ? '2xl' : 'xl'}`}
+            className="cursor-pointer transition duration-300 ease-in-out
             hover:-translate-y-1 hover:scale-150"
+            onClick={() => {
+              window.open(user.socials.github, '_blank');
+            }}
           />
           <FontAwesomeIcon
             icon={faXTwitter}
-            size="xl"
-            className="transition duration-300 ease-in-out
+            style={{ color: '#000000' }}
+            size={`${windowWidth > 768 ? '2xl' : 'xl'}`}
+            className="cursor-pointer transition duration-300 ease-in-out
             hover:-translate-y-1 hover:scale-150"
+            onClick={() => {
+              window.open(user.socials.twitter, '_blank');
+            }}
           />
           <FontAwesomeIcon
             icon={faInstagram}
-            size="xl"
-            className="transition duration-300 ease-in-out
+            style={{ color: '#c13584' }}
+            size={`${windowWidth > 768 ? '2xl' : 'xl'}`}
+            className="cursor-pointer transition duration-300 ease-in-out
             hover:-translate-y-1 hover:scale-150"
+            onClick={() => {
+              window.open(user.socials.instagram, '_blank');
+            }}
           />
         </div>
       </div>

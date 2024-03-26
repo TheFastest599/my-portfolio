@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import smallProfilePic from '../assests/small-profile.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -11,18 +11,11 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import { ListItemIcon } from '@mui/material';
 import { useScroll } from '../hooks/useScroll';
+import globalContext from '../context/global/globalContext';
 
 function Navbar() {
-  // Get window width to handle responsive design
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  const gcontext = useContext(globalContext);
+  const { windowWidth } = gcontext;
 
   const [open, setOpen] = useState(false);
 
@@ -55,14 +48,14 @@ function Navbar() {
           <ListItemText primary={'Skills'} />
         </ListItemButton>
       </ListItem>
-      <ListItem key={'Education'} disablePadding>
-        <ListItemButton onClick={() => console.log('Education')}>
-          <ListItemText primary={'Education'} />
-        </ListItemButton>
-      </ListItem>
       <ListItem key={'Projects'} disablePadding>
         <ListItemButton onClick={() => console.log('Projects')}>
           <ListItemText primary={'Projects'} />
+        </ListItemButton>
+      </ListItem>
+      <ListItem key={'Education'} disablePadding>
+        <ListItemButton onClick={() => console.log('Education')}>
+          <ListItemText primary={'Education'} />
         </ListItemButton>
       </ListItem>
       <ListItem key={'Experience'} disablePadding>
@@ -120,12 +113,12 @@ function Navbar() {
               </li>
               <li>
                 <a href="#contact" className="text-black hover:text-blue-500">
-                  Education
+                  Projects
                 </a>
               </li>
               <li>
                 <a href="#contact" className="text-black hover:text-blue-500">
-                  Projects
+                  Education
                 </a>
               </li>
               <li>
