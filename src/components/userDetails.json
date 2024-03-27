@@ -32,6 +32,14 @@
       "description": "Your notebook to save your Notes,Todos and Email Reminders in the cloud! MyNotebook, your go-to platform for streamlined note-taking, task management, and future planning. Powered by the MERN (MongoDB, Express.js, React, Node.js) stack, our small but mighty project is designed to simplify your daily life by providing a seamless and efficient way to organize your thoughts, tasks, and reminders.",
       "image": "/assests/projects/mynotebook.png",
       "stack": ["React.js", "Node.js", "Express.js", "MongoDB", "Bootstrap"],
+      "github": "https://github.com/TheFastest599/my-portfolio",
+      "live": "http://45.90.13.219:6222/"
+    },
+    "My Portfolio": {
+      "name": "My Portfolio",
+      "description": "This is my personal portfolio website. It is a simple, clean, and responsive website that showcases my projects, skills,education,experience and contact information. The website is hosted on Netlify.",
+      "image": "/assests/projects/my-portfolio.png",
+      "stack": ["React.js", "Node.js", "Tailwind CSS"],
       "github": "https://github.com/TheFastest599/MyNotebook",
       "live": "http://45.90.13.219:6222/"
     },
