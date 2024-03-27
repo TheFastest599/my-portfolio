@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import GlobalContext from './globalContext';
-import user from '../../assests/userDetails.json';
+import user from '../../components/userDetails.json';
 
 const GlobalState = props => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -12,8 +12,11 @@ const GlobalState = props => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  const publicUrl = process.env.PUBLIC_URL;
+
   return (
-    <GlobalContext.Provider value={{ user, windowWidth }}>
+    <GlobalContext.Provider value={{ user, windowWidth, publicUrl }}>
       {props.children}
     </GlobalContext.Provider>
   );

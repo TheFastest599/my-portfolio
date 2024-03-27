@@ -1,21 +1,9 @@
-import React from 'react';
-import html from '../assests/skills/html.png';
-import css from '../assests/skills/css.png';
-import javascript from '../assests/skills/javascript.png';
-import react from '../assests/skills/react.png';
-import node from '../assests/skills/node-js.png';
-import express from '../assests/skills/express-js.png';
-import mongodb from '../assests/skills/mongodb.png';
-import mysql from '../assests/skills/mysql.png';
-import tailwindCss from '../assests/skills/tailwind-css.png';
-import github from '../assests/skills/github.png';
-import python from '../assests/skills/python.png';
-import flask from '../assests/skills/flask.png';
-import pandasPython from '../assests/skills/pandas-python.png';
-import c from '../assests/skills/c.png';
-import cPlusPlus from '../assests/skills/c-plus-plus.png';
+import React, { useContext } from 'react';
+import globalContext from '../context/global/globalContext';
 
 function Skills() {
+  const gcontext = useContext(globalContext);
+  const { publicUrl } = gcontext;
   return (
     <div
       className="container w-80 sm:py-10 mx-auto px-6 md:px-6 min-h-screen"
@@ -26,7 +14,12 @@ function Skills() {
       </h1>
       <div className="grid grid-cols-4 md:grid-cols-6 xl:grid-cols-8 gap-6 text-center mt-12">
         <div className="flex flex-col justify-center items-center rounded-lg ">
-          <img width="200" height="200" src={html} alt="react" />
+          <img
+            width="200"
+            height="200"
+            src={publicUrl + '/assests/skills/html.png'}
+            alt="react"
+          />
           <p
             className=" text-base md:text-lg mt-1 md:mt-3"
             style={{
@@ -38,7 +31,12 @@ function Skills() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center rounded-lg ">
-          <img width="200" height="200" src={css} alt="react" />
+          <img
+            width="200"
+            height="200"
+            src={publicUrl + '/assests/skills/css.png'}
+            alt="react"
+          />
           <p
             className=" text-base md:text-lg mt-1 md:mt-3"
             style={{
@@ -50,7 +48,12 @@ function Skills() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center rounded-lg ">
-          <img width="200" height="200" src={javascript} alt="react" />
+          <img
+            width="200"
+            height="200"
+            src={publicUrl + '/assests/skills/javascript.png'}
+            alt="react"
+          />
           <p
             className=" text-base md:text-lg mt-1 md:mt-3"
             style={{
@@ -62,7 +65,12 @@ function Skills() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center rounded-lg ">
-          <img width="200" height="200" src={react} alt="react" />
+          <img
+            width="200"
+            height="200"
+            src={publicUrl + '/assests/skills/react.png'}
+            alt="react"
+          />
           <p
             className=" text-base md:text-lg mt-1 md:mt-3"
             style={{
@@ -74,7 +82,12 @@ function Skills() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center rounded-lg ">
-          <img width="200" height="200" src={node} alt="react" />
+          <img
+            width="200"
+            height="200"
+            src={publicUrl + '/assests/skills/node-js.png'}
+            alt="react"
+          />
           <p
             className=" text-base md:text-lg mt-1 md:mt-3"
             style={{
@@ -86,7 +99,12 @@ function Skills() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center rounded-lg ">
-          <img width="200" height="200" src={express} alt="react" />
+          <img
+            width="200"
+            height="200"
+            src={publicUrl + '/assests/skills/express-js.png'}
+            alt="react"
+          />
           <p
             className=" text-base md:text-lg mt-1 md:mt-3"
             style={{
@@ -98,7 +116,12 @@ function Skills() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center rounded-lg ">
-          <img width="200" height="200" src={mongodb} alt="react" />
+          <img
+            width="200"
+            height="200"
+            src={publicUrl + '/assests/skills/mongodb.png'}
+            alt="react"
+          />
           <p
             className=" text-base md:text-lg mt-1 md:mt-3"
             style={{
@@ -110,7 +133,12 @@ function Skills() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center rounded-lg ">
-          <img width="200" height="200" src={mysql} alt="react" />
+          <img
+            width="200"
+            height="200"
+            src={publicUrl + '/assests/skills/mysql.png'}
+            alt="react"
+          />
           <p
             className=" text-base md:text-lg mt-1 md:mt-3"
             style={{
@@ -122,7 +150,29 @@ function Skills() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center rounded-lg ">
-          <img width="200" height="200" src={tailwindCss} alt="react" />
+          <img
+            width="200"
+            height="200"
+            src={publicUrl + '/assests/skills/bootstrap.png'}
+            alt="react"
+          />
+          <p
+            className=" text-base md:text-lg mt-1 md:mt-3"
+            style={{
+              fontFamily: 'Poppins',
+              fontWeight: '500',
+            }}
+          >
+            Bootstrap
+          </p>
+        </div>
+        <div className="flex flex-col justify-center items-center rounded-lg ">
+          <img
+            width="200"
+            height="200"
+            src={publicUrl + '/assests/skills/tailwind-css.png'}
+            alt="react"
+          />
           <p
             className=" text-base md:text-lg mt-1 md:mt-3"
             style={{
@@ -134,7 +184,12 @@ function Skills() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center rounded-lg ">
-          <img width="200" height="200" src={github} alt="react" />
+          <img
+            width="200"
+            height="200"
+            src={publicUrl + '/assests/skills/github.png'}
+            alt="react"
+          />
           <p
             className=" text-base md:text-lg mt-1 md:mt-3"
             style={{
@@ -146,7 +201,12 @@ function Skills() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center rounded-lg ">
-          <img width="200" height="200" src={python} alt="react" />
+          <img
+            width="200"
+            height="200"
+            src={publicUrl + '/assests/skills/python.png'}
+            alt="react"
+          />
           <p
             className=" text-base md:text-lg mt-1 md:mt-3"
             style={{
@@ -158,7 +218,12 @@ function Skills() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center rounded-lg ">
-          <img width="200" height="200" src={flask} alt="react" />
+          <img
+            width="200"
+            height="200"
+            src={publicUrl + '/assests/skills/flask.png'}
+            alt="react"
+          />
           <p
             className=" text-base md:text-lg mt-1 md:mt-3"
             style={{
@@ -170,7 +235,12 @@ function Skills() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center rounded-lg ">
-          <img width="200" height="200" src={pandasPython} alt="react" />
+          <img
+            width="200"
+            height="200"
+            src={publicUrl + '/assests/skills/pandas-python.png'}
+            alt="react"
+          />
           <p
             className=" text-base md:text-lg mt-1 md:mt-3"
             style={{
@@ -182,7 +252,12 @@ function Skills() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center rounded-lg ">
-          <img width="200" height="200" src={c} alt="react" />
+          <img
+            width="200"
+            height="200"
+            src={publicUrl + '/assests/skills/c.png'}
+            alt="react"
+          />
           <p
             className=" text-base md:text-lg mt-1 md:mt-3"
             style={{
@@ -194,7 +269,12 @@ function Skills() {
           </p>
         </div>
         <div className="flex flex-col justify-center items-center rounded-lg ">
-          <img width="200" height="200" src={cPlusPlus} alt="react" />
+          <img
+            width="200"
+            height="200"
+            src={publicUrl + '/assests/skills/c-plus-plus.png'}
+            alt="react"
+          />
           <p
             className=" text-base md:text-lg mt-1 md:mt-3"
             style={{

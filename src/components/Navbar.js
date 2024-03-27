@@ -1,5 +1,4 @@
 import React, { useState, useContext } from 'react';
-import smallProfilePic from '../assests/small-profile.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Box from '@mui/material/Box';
@@ -15,7 +14,7 @@ import globalContext from '../context/global/globalContext';
 
 function Navbar() {
   const gcontext = useContext(globalContext);
-  const { windowWidth } = gcontext;
+  const { windowWidth, publicUrl } = gcontext;
 
   const [open, setOpen] = useState(false);
 
@@ -94,7 +93,6 @@ function Navbar() {
       return styles.hidden;
     }
   };
-
   return (
     <div className="fixed top-0 z-10" style={navStatus()}>
       {windowWidth > 768 ? (
@@ -130,7 +128,7 @@ function Navbar() {
           </div>
           <div className="flex items-center  justify-self-center text-2xl drop-shadow-lg">
             <img
-              src={smallProfilePic}
+              src={publicUrl + '/assests/small-profile.png'}
               className="h-12 rounded-full"
               alt="small-profile-pic"
             />
@@ -151,7 +149,7 @@ function Navbar() {
           />
           <div className="flex items-center  justify-self-center text-2xl drop-shadow-lg ">
             <img
-              src={smallProfilePic}
+              src={publicUrl + '/assests/small-profile.png'}
               className="h-10 rounded-full"
               alt="small-profile-pic"
             />

@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
-import mynotebook from '../assests/projects/mynotebook.png';
 import globalContext from '../context/global/globalContext';
+import ProjectsItem from './ProjectsItem';
 
 function Projects() {
   const gcontext = useContext(globalContext);
-  const { user } = gcontext;
+  const { user, publicUrl } = gcontext;
   return (
     <div
-      className="container w-80  mx-auto px-6 md:px-6 min-h-screen "
+      className="container w-80  mx-auto px-6 md:px-6 min-h-screen my-28"
       style={{ width: '100vw' }}
     >
       {/* Heading */}
@@ -15,22 +15,19 @@ function Projects() {
         Projects
       </h1>
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2  mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3  mt-12">
         {/* Card - 1 */}
-        <div
-          className=" rounded-lg shadow bg-shark text-white"
-          style={{ fontFamily: 'Poppins' }}
-        >
-          <img className="rounded-t-lg" src={mynotebook} alt="mynotebook" />
-          <div className="px-5 py-3">
-            <h5 className=" text-xl font-bold ">
-              {user.projects.myNotebook.name}
-            </h5>
-            <p className=" font-normal text-sm md:text-base h-20 mb-3">
-              {user.projects.myNotebook.description}
-            </p>
-          </div>
-        </div>
+        {Object.keys(user.projects).map((projectKey, index) => {
+          const project = user.projects[projectKey];
+          return (
+            <ProjectsItem
+              key={index}
+              projectId={index}
+              publicUrl={publicUrl}
+              project={project}
+            ></ProjectsItem>
+          );
+        })}
       </div>
     </div>
   );

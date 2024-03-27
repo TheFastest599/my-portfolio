@@ -1,0 +1,76 @@
+{
+  "name": "Anirban Saha",
+  "age": 20,
+  "description": "Hello there! 👋 I am a B.Tech CSE '26 undergraduate student at Bengal\nCollege of Engineering & Technology (BCET), Durgapur, West Bengal. I am\nvery passionate about coding and love solving problems. I am a full\nstack developer and I love computer science!",
+  "socials": {
+    "linkedin": "https://www.linkedin.com/in/anirban-saha-245640256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "twitter": "https://x.com/TheFastest599?t=H4qU5U8gNTFAC535YR2nJQ&s=09",
+    "github": "https://github.com/TheFastest599",
+    "instagram": "https://www.instagram.com/anirban_saha_t?igsh=bm00dWtpbGh4cnhv"
+  },
+  "skills": [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "MySQL",
+    "Bootstrap",
+    "Tailwind CSS",
+    "GitHub",
+    "Python",
+    "Flask",
+    "Pandas Python",
+    "C",
+    "C++"
+  ],
+  "projects": {
+    "myNotebook": {
+      "name": "MyNotebook",
+      "description": "Your notebook to save your Notes,Todos and Email Reminders in the cloud! MyNotebook, your go-to platform for streamlined note-taking, task management, and future planning. Powered by the MERN (MongoDB, Express.js, React, Node.js) stack, our small but mighty project is designed to simplify your daily life by providing a seamless and efficient way to organize your thoughts, tasks, and reminders.",
+      "image": "/assests/projects/mynotebook.png",
+      "stack": ["React.js", "Node.js", "Express.js", "MongoDB", "Bootstrap"],
+      "github": "https://github.com/TheFastest599/MyNotebook",
+      "live": "http://45.90.13.219:6222/"
+    },
+    "DOST Web": {
+      "name": "DOST Web",
+      "description": "DOST - Your Virtual Assistant Companion! Your reliable virtual assistant designed to simplify your daily tasks and enhance your productivity on the Windows platform. (Windows App currently in development)",
+      "image": "/assests/projects/dost.png",
+      "stack": ["HTML", "CSS", "Javascript", "Bootstrap", "Python", "Flask"],
+      "github": "https://github.com/assistantdost/Web",
+      "live": "http://45.90.13.218:6931"
+    },
+    "Library Management System ": {
+      "name": "Library Management System",
+      "description": "This is a simple console-based Library Management System implemented in the C programming language. The program allows users to perform various library-related tasks, such as borrowing books, returning books, adding books to the inventory, deleting books, and displaying the available books.",
+      "image": "/assests/projects/librarymanagementsystem.png",
+      "stack": ["C", "CSV"],
+      "github": "https://github.com/TheFastest599/library-managenent-system"
+    },
+    "TextUtils": {
+      "name": "TextUtils",
+      "description": "TextUtils gives you a way to analyze your text quickly and efficiently. Be it word count , character count etc.TextUtils is a free character counter tool that provides instan character count and statistics for a a given text. TextUtils reports the number of words and characters. Thus it is suitable for writing text with word/character limit.",
+      "image": "/assests/projects/textutils.png",
+      "stack": ["React.js", "Node.js", "Bootstrap"],
+      "github": "https://github.com/TheFastest599/textutils",
+      "live": "https://textutils1001.netlify.app"
+    },
+    "NewsMonkey": {
+      "name": "NewsMonkey - News App",
+      "description": "NewsMonkey is a news app that provides the latest news from around the world. The app is powered by the NewsAPI, which allows users to search for news articles by keyword, category, or source. Users can read news according to their preferences and stay updated with the latest happenings.",
+      "image": "/assests/projects/newsmonkey.png",
+      "stack": ["React.js", "Node.js", "Bootstrap"],
+      "github": "https://github.com/TheFastest599/NewsMonkey-newsapp"
+    },
+    "Hospital Management System": {
+      "name": "Hospital Management System",
+      "description": "Health Wings Hospital Management System (Class 12 Project) is a GUI-based application developed in Python using TkInter for the interface, Pandas for data manipulation, and CSV for data storage. The system is designed to streamline the process of bed booking and patient record management in a hospital setting.",
+      "image": "/assests/projects/hospital-management-system.png",
+      "stack": ["Python", "TkInter", "Pandas", "CSV"],
+      "github": "https://github.com/TheFastest599/HOSPITAL-MANAGEMENT-SYSTEM"
+    }
+  }
+}
