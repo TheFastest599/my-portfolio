@@ -27,23 +27,14 @@ function HeroSection() {
       </div>
       {/* Name and Details */}
       <div className="absolute top-56 left-10 msm:top-64 msm:left-10 sm:top-80 sm:left-10  md:top-20 md:left-20 ">
-        <h1
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl "
-          style={{ fontFamily: 'Bebas Neue', fontWeight: '300' }}
-        >
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bebas font-light">
           My Name is
         </h1>
-        <h1
-          className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-10xl 2xl:text-11xl text-azure-radiance "
-          style={{
-            fontFamily: 'Bebas Neue',
-            fontWeight: '500',
-          }}
-        >
+        <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-10xl 2xl:text-11xl text-azure-radiance font-bebas font-medium">
           {user.name}
         </h1>
         {/* About Me Description */}
-        <p className="font-sans text-xs sm:text-sm font-medium max-w-72 sm:max-w-96 md:max-w-112 lg:max-w-128 text-justify">
+        <p className="font-poppins text-xs sm:text-sm  max-w-72 sm:max-w-96 md:max-w-112 lg:max-w-128 text-justify">
           {`"${user.description}"`}
         </p>
         {/* Hire Me! */}

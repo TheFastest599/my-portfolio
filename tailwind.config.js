@@ -27,6 +27,10 @@ module.exports = {
       screens: {
         msm: '414px',
       },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        bebas: ['Bebas Neue', 'cursive'],
+      },
     },
   },
   plugins: [],

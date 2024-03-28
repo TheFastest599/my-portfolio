@@ -36,10 +36,7 @@ function ProjectsItem(props) {
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popover' : undefined;
   return (
-    <div
-      className=" rounded-lg shadow   glassBox"
-      style={{ fontFamily: 'Poppins' }}
-    >
+    <div className=" rounded-lg shadow font-poppins  glassBox">
       <img
         className="rounded-t-lg"
         src={publicUrl + project.image}
@@ -51,7 +48,6 @@ function ProjectsItem(props) {
           className=" font-normal text-sm md:text-base min-h-28 mb-3"
           id={projectId + 'desc'}
           onClick={e => {
-            console.log(e.target.id);
             if (
               e.target.id === projectId + 'desc' &&
               project.description.length > 200
@@ -131,8 +127,7 @@ function ProjectsItem(props) {
             </button>
             {project.live ? (
               <button
-                className=" pe-1.5 py-1.5 mx-1 hover:underline text-orange-600"
-                style={{ fontFamily: 'Poppins', fontWeight: '500' }}
+                className=" pe-1.5 py-1.5 mx-1 hover:underline text-orange-600 font-poppins font-medium"
                 onClick={() => {
                   window.open(project.live, '_blank');
                 }}

@@ -80,5 +80,23 @@
       "stack": ["Python", "TkInter", "Pandas", "CSV"],
       "github": "https://github.com/TheFastest599/HOSPITAL-MANAGEMENT-SYSTEM"
     }
+  },
+  "education": {
+    "college": {
+      "name": "Bengal College of Engineering & Technology",
+      "description": "Bengal College of Engineering & Technology (BCET) is a private engineering college located in Durgapur, West Bengal. The college is affiliated with the Maulana Abul Kalam Azad University of Technology (MAKAUT) and offers a variety of undergraduate and postgraduate programs in engineering and technology.",
+      "link": "https://bcetdgp.ac.in",
+      "image": "/assests/education/bcet.png",
+      "period": "2022 - 2026 | Pursuing B.Tech in Computer Science & Engineering",
+      "grade": "7.6 (Till 2nd Semester)"
+    },
+    "school": {
+      "name": "Maharishi Vidya Mandir Senior Secondary School, Silpukhuri,Guwahati",
+      "description": "Maharishi Vidya Mandir (MVM) School, Guwahati is a part of Maharishi Global Education Movement. The school is affiliated to Central Board of Secondary Education, New Delhi up to Senior Secondary level.",
+      "link": "https://mvmguwahati-1.org",
+      "image": "/assests/education/maharshi-vidya-mandir.png",
+      "period": "2010 - 2022 | Class 12 (Science)",
+      "grade": "Class 10 - 92.4% | Class 12 - 84%"
+    }
   }
 }

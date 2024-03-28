@@ -9,7 +9,7 @@ function Skills() {
       className="container w-80 sm:py-10 mx-auto px-6 md:px-6 min-h-screen"
       style={{ width: '100vw' }}
     >
-      <h1 className="text-left text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-mono font-bold text-slate-900">
+      <h1 className="text-left text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-poppins font-bold text-slate-900">
         Skills
       </h1>
       <div className="grid grid-cols-4 md:grid-cols-6 xl:grid-cols-8 gap-6 text-center mt-12">

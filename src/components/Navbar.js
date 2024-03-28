@@ -24,7 +24,11 @@ function Navbar() {
 
   // Drawer List for mobile view navigation
   const DrawerList = (
-    <Box sx={{ width: 200 }} role="presentation" onClick={toggleDrawer(false)}>
+    <Box
+      sx={{ width: 200, fontFamily: 'Poppins' }}
+      role="presentation"
+      onClick={toggleDrawer(false)}
+    >
       <ListItem key={'close'} disablePadding>
         <ListItemButton onClick={toggleDrawer(false)}>
           <ListItemIcon
@@ -96,7 +100,7 @@ function Navbar() {
   return (
     <div className="fixed top-0 z-10" style={navStatus()}>
       {windowWidth > 768 ? (
-        <nav className="flex items-center justify-between py-2 container mx-auto px-2 md:px-6">
+        <nav className="flex items-center justify-between py-2 font-poppins container mx-auto px-2 md:px-6">
           <div>
             <ul className="flex space-x-4">
               <li>
@@ -140,7 +144,7 @@ function Navbar() {
           </div>
         </nav>
       ) : (
-        <nav className="flex items-center justify-between py-2 px-4  mx-auto ">
+        <nav className="flex items-center justify-between py-2 px-4 font-poppins mx-auto ">
           <FontAwesomeIcon
             icon={faBars}
             size="xl"
