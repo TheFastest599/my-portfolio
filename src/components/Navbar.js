@@ -14,7 +14,7 @@ import globalContext from '../context/global/globalContext';
 
 function Navbar() {
   const gcontext = useContext(globalContext);
-  const { windowWidth, publicUrl } = gcontext;
+  const { windowWidth, publicUrl, user } = gcontext;
 
   const [open, setOpen] = useState(false);
 
@@ -132,7 +132,7 @@ function Navbar() {
           </div>
           <div className="flex items-center  justify-self-center text-2xl drop-shadow-lg">
             <img
-              src={publicUrl + '/assests/small-profile.png'}
+              src={publicUrl + user.smallDp}
               className="h-12 rounded-full"
               alt="small-profile-pic"
             />
@@ -153,7 +153,7 @@ function Navbar() {
           />
           <div className="flex items-center  justify-self-center text-2xl drop-shadow-lg ">
             <img
-              src={publicUrl + '/assests/small-profile.png'}
+              src={publicUrl + user.smallDp}
               className="h-10 rounded-full"
               alt="small-profile-pic"
             />

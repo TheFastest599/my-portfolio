@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 import globalContext from '../context/global/globalContext';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Education() {
   const gcontext = useContext(globalContext);
@@ -22,11 +24,18 @@ function Education() {
               key={index}
               className="flex flex-col items-center font-poppins  glassBox my-4 rounded-lg shadow-lg md:flex-row md:max-w-full "
             >
-              <img
+              <LazyLoadImage
+                effect="blur"
+                src={publicUrl + education_.image}
+                alt="education"
+                className="object-cover w-full rounded-t-lg h-auto md:w-64 lg:w-96 md:rounded-none md:rounded-s-lg"
+              />
+              {/* <img
                 className="object-cover w-full rounded-t-lg h-auto md:w-64 lg:w-96 md:rounded-none md:rounded-s-lg"
                 src={publicUrl + education_.image}
                 alt="education"
-              />
+                loading="lazy"
+              /> */}
               <div className="flex flex-col justify-between p-6 leading-normal">
                 <h5
                   className="mb-2 text-xl md:text-2xl font-bold tracking-tight hover:text-blue-600 cursor-pointer"

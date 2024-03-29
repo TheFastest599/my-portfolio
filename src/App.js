@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import Experience from './components/Experience';
 
 import './output.css';
 
@@ -16,6 +17,7 @@ function App() {
       <Skills></Skills>
       <Projects></Projects>
       <Education></Education>
+      <Experience></Experience>
       {/* <Filter></Filter> */}
       {/* Ura do upar wale ko  */}
     </>

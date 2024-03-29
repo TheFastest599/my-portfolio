@@ -13,14 +13,13 @@ import {
 function HeroSection() {
   const gcontext = useContext(globalContext);
   const { user, windowWidth, publicUrl } = gcontext;
-  console.log(user);
   return (
     <div style={{ height: '90vh' }} className="my-12 md:my-14 relative ">
       <ParticlesComponent id="particles" />
       {/* Hero Pic */}
       <div className="absolute top-6 msm:top-8 sm:top-10 md:top-15 md:right-20 left-1/2 transform -translate-x-1/2 md:left-auto md:transform-none">
         <img
-          src={publicUrl + '/assests/profile-pic (17).png'}
+          src={publicUrl + user.bigDp}
           alt="heroPic"
           className="w-72 sm:w-80 md:w-88 lg:w-96 xl:w-128 rounded-full "
         />

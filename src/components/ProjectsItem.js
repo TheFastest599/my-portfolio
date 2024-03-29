@@ -4,6 +4,8 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLink, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Popover from '@mui/material/Popover';
 import Typography from '@mui/material/Typography';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function ProjectsItem(props) {
   const { project, publicUrl, projectId } = props;
@@ -37,11 +39,18 @@ function ProjectsItem(props) {
   const id = open ? 'simple-popover' : undefined;
   return (
     <div className=" rounded-lg shadow font-poppins  glassBox">
-      <img
+      <LazyLoadImage
+        effect="blur"
+        src={publicUrl + project.image}
+        alt="projects"
+        className="rounded-t-lg"
+      />
+      {/* <img
         className="rounded-t-lg"
         src={publicUrl + project.image}
         alt="mynotebook"
-      />
+        loading="lazy"
+      /> */}
       <div className="px-5 py-3">
         <h5 className=" text-xl font-bold my-2">{project.name}</h5>
         <p
