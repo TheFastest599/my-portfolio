@@ -5,10 +5,11 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Skills() {
   const gcontext = useContext(globalContext);
-  const { user, publicUrl } = gcontext;
+  const { user, publicUrl, refStore } = gcontext;
   return (
     <div
-      className="container w-80 sm:py-10 mx-auto px-6 md:px-6 min-h-screen"
+      className="container w-80 my-32 sm:py-10 mx-auto px-6 md:px-6 min-h-screen"
+      ref={refStore.skillsRef}
       style={{ width: '100vw' }}
     >
       <h1 className="text-left text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-poppins font-bold text-slate-900">

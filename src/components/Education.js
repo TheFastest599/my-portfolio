@@ -5,10 +5,11 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Education() {
   const gcontext = useContext(globalContext);
-  const { user, publicUrl } = gcontext;
+  const { user, publicUrl, refStore } = gcontext;
   return (
     <div
       className="container w-80  mx-auto px-6 md:px-6 min-h-screen my-28"
+      ref={refStore.educationRef}
       style={{ width: '100vw' }}
     >
       {/* Heading */}
@@ -28,7 +29,7 @@ function Education() {
                 effect="blur"
                 src={publicUrl + education_.image}
                 alt="education"
-                className="object-cover w-full rounded-t-lg h-auto md:w-64 lg:w-96 md:rounded-none md:rounded-s-lg"
+                className="object-cover w-full rounded-t-lg h-auto min-h-32 md:w-64 lg:w-96 md:rounded-none md:rounded-s-lg"
               />
               {/* <img
                 className="object-cover w-full rounded-t-lg h-auto md:w-64 lg:w-96 md:rounded-none md:rounded-s-lg"

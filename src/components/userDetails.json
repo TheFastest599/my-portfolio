@@ -1,15 +1,18 @@
 {
   "name": "Anirban Saha",
   "age": 20,
-  "description": "Hello there! 👋 I am a B.Tech CSE '26 undergraduate student at Bengal\nCollege of Engineering & Technology (BCET), Durgapur, West Bengal. I am\nvery passionate about coding and love solving problems. I am a full\nstack developer and I love computer science!",
+  "description": "Hello there! 👋 I am a B.Tech CSE '26 undergraduate student at Bengal\nCollege of Engineering and Technology (BCET), Durgapur, West Bengal. I am\nvery passionate about coding and love solving problems. I am a full\nstack developer and I love computer science!",
   "socials": {
     "linkedin": "https://www.linkedin.com/in/anirban-saha-245640256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "twitter": "https://x.com/TheFastest599?t=H4qU5U8gNTFAC535YR2nJQ&s=09",
     "github": "https://github.com/TheFastest599",
     "instagram": "https://www.instagram.com/anirban_saha_t?igsh=bm00dWtpbGh4cnhv"
   },
+  "email": "ribhusaha2003@gmail.com",
+  "phone": "+91 9395098694",
   "bigDp": "/assests/profile-pic (17).png",
   "smallDp": "/assests/small-profile.png",
+  "contactMeDescription": "Thank You for visiting my Portfolio Website!!🤗🤗 If you are interested in working with me, please feel free to reach out to me. I am always open to new opportunities and challenges. Connect with me over the socials or drop me an email. I will get back to you as soon as possible.",
   "skills": {
     "HTML": {
       "name": "HTML",
@@ -90,7 +93,7 @@
     "GitHub",
     "Python",
     "Flask",
-    "Pandas Python",
+    "Pandas",
     "C",
     "C++"
   ],
@@ -171,7 +174,7 @@
     "1": {
       "period": "January 2024",
       "tittle": "2nd in CODE OF DUTY and 3rd in CODE ERROR",
-      "description": "I secured 2nd podition in CODE OF DUTY and 3rd position in CODE ERROR of the event CYBERVERSE 2024 organised by Cybercell Club of BCET"
+      "description": "I secured 2nd podition in CODE OF DUTY and 3rd position in CODE ERROR of the event CYBERVERSE 2024 organised by Cybercell Club of BCET."
     },
     "2": {
       "period": "November 2023 - Present",

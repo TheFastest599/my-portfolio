@@ -132,7 +132,11 @@ function Navbar() {
                   onClick={() => {
                     scrollToSection(refStore.heroSectionRef);
                   }}
-                  className="hover:text-blue-500 text-black"
+                  className={` hover:text-blue-500 ${
+                    oberseverStore.heroSectionObserver
+                      ? 'text-azure-radiance '
+                      : 'text-black'
+                  }`}
                 >
                   About Me
                 </button>
@@ -142,7 +146,11 @@ function Navbar() {
                   onClick={() => {
                     scrollToSection(refStore.skillsRef);
                   }}
-                  className="hover:text-blue-500 text-black"
+                  className={` hover:text-blue-500 ${
+                    oberseverStore.skillsObserver
+                      ? 'text-azure-radiance '
+                      : 'text-black'
+                  }`}
                 >
                   Skills
                 </button>
@@ -152,7 +160,11 @@ function Navbar() {
                   onClick={() => {
                     scrollToSection(refStore.projectsRef);
                   }}
-                  className="hover:text-blue-500 text-black"
+                  className={` hover:text-blue-500 ${
+                    oberseverStore.projectsObserver
+                      ? 'text-azure-radiance '
+                      : 'text-black'
+                  }`}
                 >
                   Projects
                 </button>
@@ -162,7 +174,11 @@ function Navbar() {
                   onClick={() => {
                     scrollToSection(refStore.educationRef);
                   }}
-                  className="hover:text-blue-500 text-black"
+                  className={` hover:text-blue-500 ${
+                    oberseverStore.educationObserver
+                      ? 'text-azure-radiance '
+                      : 'text-black'
+                  }`}
                 >
                   Education
                 </button>
@@ -172,7 +188,11 @@ function Navbar() {
                   onClick={() => {
                     scrollToSection(refStore.experienceRef);
                   }}
-                  className="hover:text-blue-500 text-black"
+                  className={` hover:text-blue-500 ${
+                    oberseverStore.experienceObserver
+                      ? 'text-azure-radiance '
+                      : 'text-black'
+                  }`}
                 >
                   Experience
                 </button>
@@ -196,7 +216,11 @@ function Navbar() {
               onClick={() => {
                 scrollToSection(refStore.contactusRef);
               }}
-              className="px-4 py-2 rounded-full transition duration-200 ease-in-out hover:drop-shadow-lg hover:scale-105 bg-quill-gray text-black"
+              className={` px-4 py-2 rounded-full hover:drop-shadow-md ${
+                oberseverStore.experienceObserver
+                  ? 'bg-shark text-white'
+                  : 'bg-quill-gray text-black'
+              }`}
             >
               Contact Me
             </button>
@@ -226,7 +250,11 @@ function Navbar() {
             onClick={() => {
               scrollToSection(refStore.contactusRef);
             }}
-            className="px-4 mx-2 py-1.5 rounded-full hover:drop-shadow-lg hover:scale-105 text-sm bg-quill-gray text-black transition duration-200 ease-in-out"
+            className={` px-4 mx-2 py-1.5 rounded-full hover:drop-shadow-md text-sm ${
+              oberseverStore.experienceObserver
+                ? 'bg-shark text-white'
+                : 'bg-quill-gray text-black'
+            }`}
           >
             Contact Me
           </button>

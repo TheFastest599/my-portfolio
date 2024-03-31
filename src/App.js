@@ -1,15 +1,18 @@
+import React, { useContext } from 'react';
 import './App.css';
 import Education from './components/Education';
-import Filter from './components/Filter stuff';
 import HeroSection from './components/HeroSection';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
-
 import './output.css';
+import Contactus from './components/Contactus';
+import globalContext from './context/global/globalContext';
 
 function App() {
+  const gcontext = useContext(globalContext);
+
   return (
     <>
       <Navbar></Navbar>
@@ -18,8 +21,7 @@ function App() {
       <Projects></Projects>
       <Education></Education>
       <Experience></Experience>
-      {/* <Filter></Filter> */}
-      {/* Ura do upar wale ko  */}
+      <Contactus></Contactus>
     </>
   );
 }

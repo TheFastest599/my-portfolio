@@ -12,9 +12,14 @@ import {
 
 function HeroSection() {
   const gcontext = useContext(globalContext);
-  const { user, windowWidth, publicUrl } = gcontext;
+  const { user, windowWidth, publicUrl, refStore } = gcontext;
+
   return (
-    <div style={{ height: '90vh' }} className="my-12 md:my-14 relative ">
+    <div
+      style={{ height: '90vh' }}
+      ref={refStore.heroSectionRef}
+      className="my-14 md:my-16 relative "
+    >
       <ParticlesComponent id="particles" />
       {/* Hero Pic */}
       <div className="absolute top-6 msm:top-8 sm:top-10 md:top-15 md:right-20 left-1/2 transform -translate-x-1/2 md:left-auto md:transform-none">
@@ -33,7 +38,7 @@ function HeroSection() {
           {user.name}
         </h1>
         {/* About Me Description */}
-        <p className="font-poppins text-xs sm:text-sm  max-w-72 sm:max-w-96 md:max-w-112 lg:max-w-128 text-justify">
+        <p className="font-poppins text-xs md:text-sm lg:text-base  max-w-72 sm:max-w-96 md:max-w-112 lg:max-w-128 text-justify">
           {`"${user.description}"`}
         </p>
         {/* Hire Me! */}

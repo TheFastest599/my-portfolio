@@ -1,8 +1,7 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 
-const useIntersectionObserver = () => {
+const useIntersectionObserver = domRef => {
   const [isVisible, setIsVisible] = useState(false);
-  const domRef = useRef();
 
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
@@ -21,7 +20,7 @@ const useIntersectionObserver = () => {
     };
   }, []);
 
-  return [isVisible, domRef];
+  return isVisible;
 };
 
 export default useIntersectionObserver;

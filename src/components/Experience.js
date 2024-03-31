@@ -5,11 +5,12 @@ import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
 function Experience() {
   const gcontext = useContext(globalContext);
-  const { user } = gcontext;
+  const { user, refStore } = gcontext;
   const [displayCount, setDisplayCount] = useState(4);
   return (
     <div
       className="container w-80  mx-auto px-6 md:px-6 min-h-screen my-28"
+      ref={refStore.experienceRef}
       style={{ width: '100vw' }}
     >
       {/* Heading */}

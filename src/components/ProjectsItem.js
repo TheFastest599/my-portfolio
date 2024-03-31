@@ -43,7 +43,7 @@ function ProjectsItem(props) {
         effect="blur"
         src={publicUrl + project.image}
         alt="projects"
-        className="rounded-t-lg"
+        className="rounded-t-lg min-h-32"
       />
       {/* <img
         className="rounded-t-lg"
