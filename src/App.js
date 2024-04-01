@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import './App.css';
 import Education from './components/Education';
 import HeroSection from './components/HeroSection';
@@ -8,13 +8,11 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import './output.css';
 import Contactus from './components/Contactus';
-import globalContext from './context/global/globalContext';
+import GlobalState from './context/global/GlobalState';
 
 function App() {
-  const gcontext = useContext(globalContext);
-
   return (
-    <>
+    <GlobalState>
       <Navbar></Navbar>
       <HeroSection></HeroSection>
       <Skills></Skills>
@@ -22,7 +20,7 @@ function App() {
       <Education></Education>
       <Experience></Experience>
       <Contactus></Contactus>
-    </>
+    </GlobalState>
   );
 }
 

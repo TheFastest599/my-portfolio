@@ -14,7 +14,7 @@ import globalContext from '../context/global/globalContext';
 
 function Navbar() {
   const gcontext = useContext(globalContext);
-  const { windowWidth, publicUrl, user, refStore, oberseverStore } = gcontext;
+  const { windowWidth, publicUrl, user, refStore } = gcontext;
 
   const [open, setOpen] = useState(false);
 

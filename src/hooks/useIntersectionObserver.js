@@ -18,6 +18,7 @@ const useIntersectionObserver = domRef => {
         observer.unobserve(refCurrent);
       }
     };
+    // eslint-disable-next-line
   }, []);
 
   return isVisible;

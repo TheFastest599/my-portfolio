@@ -9,10 +9,11 @@ import {
   faXTwitter,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
+import { ReactTyped } from 'react-typed';
 
 function HeroSection() {
   const gcontext = useContext(globalContext);
-  const { user, windowWidth, publicUrl, refStore } = gcontext;
+  const { user, windowWidth, publicUrl, refStore, oberseverStore } = gcontext;
 
   return (
     <div
@@ -38,13 +39,22 @@ function HeroSection() {
           {user.name}
         </h1>
         {/* About Me Description */}
-        <p className="font-poppins text-xs md:text-sm lg:text-base  max-w-72 sm:max-w-96 md:max-w-112 lg:max-w-128 text-justify">
-          {`"${user.description}"`}
-        </p>
+        {oberseverStore.heroSectionObserver && (
+          <ReactTyped
+            className="flex font-poppins text-xs md:text-sm lg:text-base min-h-28 sm:min-h-32 max-w-72 sm:max-w-96 md:max-w-112 lg:max-w-128 text-justify"
+            strings={[`"${user.description}"`]}
+            typeSpeed={30}
+          />
+        )}
         {/* Hire Me! */}
         <button
           onClick={() => {
-            console.log('Hire Me Please ! 🤗');
+            const link = document.createElement('a');
+            link.href = `${user.resume}`;
+            link.download = 'Anirban_Saha_resume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
           }}
           className="bg-international-orange font-sans font-medium text-white rounded-full py-1 px-5 mt-6 md:px-12 md:text-lg md:py-2
             md:mt-12 focus:ring focus:ring-orange-300 focus:outline-none hover:drop-shadow-lg transition duration-300 ease-in-out

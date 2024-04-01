@@ -112,7 +112,7 @@
       "image": "/assests/projects/my-portfolio.jpg",
       "stack": ["React.js", "Node.js", "Tailwind CSS"],
       "github": "https://github.com/TheFastest599/MyNotebook",
-      "live": "http://45.90.13.219:6222/"
+      "live": "https://anirban-saha-portfolio.netlify.app"
     },
     "DOST Web": {
       "name": "DOST Web",
@@ -150,6 +150,29 @@
       "image": "/assests/projects/hospital-management-system.jpg",
       "stack": ["Python", "TkInter", "Pandas", "CSV"],
       "github": "https://github.com/TheFastest599/HOSPITAL-MANAGEMENT-SYSTEM"
+    },
+    "Task Master": {
+      "name": "Task Master - Flask App",
+      "description": "Task Master is a simple task management app built using the Flask web framework. The app allows users to create, update, and delete tasks. ",
+      "image": "/assests/projects/taskmaster.jpg",
+      "stack": ["Python", "Flask", "HTML", "CSS"],
+      "github": "https://github.com/TheFastest599/Python-Flask-Task-Master"
+    },
+    "Pig Game": {
+      "name": "Pig Game",
+      "description": "Pig Game is a simple dice game that can be played by two players. The game is played with a single six-sided die. The objective of the game is to be the first player to reach a total score of 100 or more points. Players take turns rolling the die and accumulating points.The player can choose to 'Hold', which means that his ROUND score gets added to his GLOBAL score. After that, it's the next player's turn. However, if a player rolls a 1, they lose all their points for that turn and the next player takes their turn.",
+      "image": "/assests/projects/piggame.jpg",
+      "stack": ["HTML", "CSS", "Javascript"],
+      "github": "https://github.com/TheFastest599/pig-game",
+      "live": "https://pig-game-202.netlify.app"
+    },
+    "Guess My Number": {
+      "name": "Guess My Number",
+      "description": "Guess My Number is a simple number guessing game where the player has to guess a number between 1 and 20. The player has a total of 20 attempts to guess the correct number. After each guess, the game provides feedback to the player, indicating whether the correct number is higher or lower than the guess. The game also keeps track of the player's high score, which is the lowest number of attempts taken to guess the correct number.",
+      "image": "/assests/projects/guessmynumber.jpg",
+      "stack": ["HTML", "CSS", "Javascript"],
+      "github": "https://github.com/TheFastest599?tab=repositories",
+      "live": "https://guess-my-number111.netlify.app"
     }
   },
   "education": {
@@ -181,21 +204,31 @@
       "tittle": "Coordinator at Code Vision BCET",
       "description": "At Code Vision, Bengal College of Engineering & Technology (BCET), Durgapur, I serve as a Coordinator. My role involves organizing a variety of coding events, workshops, and seminars to foster a strong coding environment among the student body."
     },
-
     "3": {
+      "period": "November 2023",
+      "tittle": "Coordinator NSS BCET",
+      "description": "I joined the National Service Scheme (NSS) at Bengal College of Engineering & Technology (BCET), Durgapur, in September 2023. I am actively involved in various social service activities ."
+    },
+    "4": {
+      "period": "October 2023",
+      "tittle": "Swachh Bharat Ekk kadam swachhta ki oar event by NSS BCET",
+      "description": "I participated in the Swachh Bharat Ekk kadam swachhta ki oar event organised by the NSS BCET. The event was aimed at promoting cleanliness and hygiene in the local community."
+    },
+    "5": {
+      "period": "September 2023",
+      "tittle": "Volunteering in FIESTA 2K23",
+      "description": "I volunteered in FIESTA 2K23 organised by the Enterpreneurship Development Cell(EDC) of BCET. The event was aimed at promoting innovation and entrepreneurship among students."
+    },
+    "6": {
       "period": "September 2023",
       "tittle": "2nd in CODEJAM HACKATHON",
       "description": "Our team (Edgerunners) secured 2nd place in the CODEJAM HACKATHON  organised by the CODE VISON Club of BCET."
     },
-    "4": {
-      "period": "September 2023",
-      "tittle": "Joined NSS BCET",
-      "description": "I joined the National Service Scheme (NSS) at Bengal College of Engineering & Technology (BCET), Durgapur, in September 2023. I am actively involved in various social service activities ."
-    },
-    "5": {
+    "7": {
       "period": "April 2023 - Present",
       "tittle": "Coordinater at EDC BCET",
       "description": "I am currently working as a Coordinater at Entrepreneurship Development Cell, Bengal College of Engineering & Technology (BCET), Durgapur. I take part in organizing various events, workshops, and seminars to promote entrepreneurship and innovation among students."
     }
-  }
+  },
+  "resume": "/assests/ANIRBAN SAHA –Resume.pdf"
 }

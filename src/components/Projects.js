@@ -48,6 +48,7 @@ function Projects() {
   // }, [open, selectedTechnologies]);
 
   // Filter projects based on selected technologies
+
   let filteredProjects = Object.keys(user.projects).filter(projectKey => {
     const project = user.projects[projectKey];
     // Check if all selected technologies are used in this project
@@ -62,14 +63,17 @@ function Projects() {
 
   return (
     <div
-      className="container w-80  mx-auto px-6 md:px-6 min-h-screen mb-28"
+      className="container w-80  mx-auto px-6 md:px-6 min-h-screen mb-28 "
       ref={refStore.projectsRef}
       style={{ width: '100vw' }}
     >
       {/* Heading */}
       <div className="flex items-center justify-between">
-        <h1 className="text-left text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-poppins font-bold text-slate-900">
-          Projects
+        <h1 className="flex items-center text-left text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-poppins font-bold text-slate-900">
+          Projects{' '}
+          <p className="p-1.5 sm:p-2 mx-2 rounded-lg bg-shark text-white text-xl sm:text-2xl lg:text-3xl">
+            {Object.keys(filteredProjects).length}
+          </p>
         </h1>
         <button
           className="me-3 bg-shark relative inline-flex items-center rounded-md p-1 cursor-pointer hover:drop-shadow-lg transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"

@@ -13,12 +13,11 @@ import { faEnvelope, faPhone, faCopy } from '@fortawesome/free-solid-svg-icons';
 import Box from '@mui/material/Box';
 import Snackbar from '@mui/material/Snackbar';
 import { ReactTyped } from 'react-typed';
-import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 function Contactus() {
   const gcontext = useContext(globalContext);
   const { user, windowWidth, refStore, oberseverStore } = gcontext;
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  // const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   const copyToClipboard = text => {
     navigator.clipboard
@@ -108,9 +107,9 @@ function Contactus() {
               {/* Description */}
               {oberseverStore.contactusObserver && (
                 <ReactTyped
-                  className="mt-2 text-sm md:text-base lg:text-lg text-justify font-medium col-span-2"
+                  className="mt-2 text-sm md:text-base  min-h-40 sm:min-h-36 lg:text-lg text-justify font-medium col-span-2"
                   strings={[user.contactMeDescription]}
-                  typeSpeed={60}
+                  typeSpeed={30}
                 />
               )}
 
@@ -123,15 +122,6 @@ function Contactus() {
                 <div>
                   <h2 className="mt-4 text-base font-medium text-gray-800">
                     Email{' '}
-                    {/* {!isMobile && (
-                      <FontAwesomeIcon
-                        className="text-azure-radiance hover:scale-125 cursor-pointer"
-                        icon={faCopy}
-                        onClick={() => {
-                          copyToClipboard(user.email);
-                        }}
-                      />
-                    )} */}
                     <FontAwesomeIcon
                       className="text-azure-radiance hover:scale-125 cursor-pointer"
                       icon={faCopy}
@@ -146,6 +136,7 @@ function Contactus() {
                   <a
                     href={`mailto:${user.email}?subject=Portfolio Related Inquiry`}
                     target="_blank"
+                    rel="noreferrer"
                     className="mt-2 text-sm text-blue-500"
                   >
                     {user.email}
@@ -166,15 +157,6 @@ function Contactus() {
                 <div>
                   <h2 className="mt-4  text-base font-medium text-gray-800">
                     Phone{' '}
-                    {/* {!isMobile && (
-                      <FontAwesomeIcon
-                        className="text-azure-radiance hover:scale-125 cursor-pointer"
-                        icon={faCopy}
-                        onClick={() => {
-                          copyToClipboard(user.phone);
-                        }}
-                      />
-                    )} */}
                     <FontAwesomeIcon
                       className="text-azure-radiance hover:scale-125 cursor-pointer"
                       icon={faCopy}
