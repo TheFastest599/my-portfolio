@@ -52,7 +52,7 @@ function HeroSection() {
             link.click();
             document.body.removeChild(link);
           }}
-          className="bg-international-orange font-sans font-medium text-white rounded-full py-1 px-5 mt-6 md:px-12 md:text-lg md:py-2
+          className="bg-international-orange font-poppins font-medium text-white rounded-full py-1 px-5 mt-6 md:px-12 md:text-lg md:py-2
             md:mt-12 focus:ring focus:ring-orange-300 focus:outline-none hover:drop-shadow-lg transition duration-300 ease-in-out
             hover:-translate-y-1 hover:scale-110"
         >

@@ -40,8 +40,8 @@ function App() {
       <HeroSection></HeroSection>
       <Skills></Skills>
       <Projects></Projects>
-      <Education></Education>
       <Experience></Experience>
+      <Education></Education>
       <Contactus></Contactus>
     </GlobalState>
   );
