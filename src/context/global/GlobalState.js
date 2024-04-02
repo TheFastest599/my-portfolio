@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import GlobalContext from './globalContext';
-import user from '../../components/userDetails.json';
+import user from '../../components/assets/userDetails.json';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 
 const GlobalState = props => {

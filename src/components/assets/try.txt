@@ -1,5 +1,0 @@
-emailjs.send("service_w19dwf8","template_2u4ezdl",{
-from_name: "Anirban Saha",
-email_id: "ribhusaha2003@gmail.com",
-message: "New template it is",
-});

@@ -1,6 +1,4 @@
 import React, { useContext } from 'react';
-
-import ParticlesComponent from './particles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import globalContext from '../context/global/globalContext';
 import {
@@ -14,14 +12,12 @@ import { ReactTyped } from 'react-typed';
 function HeroSection() {
   const gcontext = useContext(globalContext);
   const { user, windowWidth, publicUrl, refStore, oberseverStore } = gcontext;
-
   return (
     <div
       style={{ height: '90vh' }}
       ref={refStore.heroSectionRef}
       className="my-14 md:my-16 relative "
     >
-      <ParticlesComponent id="particles" />
       {/* Hero Pic */}
       <div className="absolute top-6 msm:top-8 sm:top-10 md:top-15 md:right-20 left-1/2 transform -translate-x-1/2 md:left-auto md:transform-none">
         <img
@@ -43,7 +39,7 @@ function HeroSection() {
           <ReactTyped
             className="flex font-poppins text-xs md:text-sm lg:text-base min-h-28 sm:min-h-32 max-w-72 sm:max-w-96 md:max-w-112 lg:max-w-128 text-justify"
             strings={[`"${user.description}"`]}
-            typeSpeed={30}
+            typeSpeed={22}
           />
         )}
         {/* Hire Me! */}
@@ -63,7 +59,7 @@ function HeroSection() {
           Hire Me!
         </button>
         {/* Social Links */}
-        <div className="flex items-center justify-between max-w-48 ms-2 sm:max-w-60 md:max-w-80  mt-32">
+        <div className="flex items-center justify-between max-w-48 ms-2 sm:max-w-60 md:max-w-80 mt-20 sm:mt-32">
           <FontAwesomeIcon
             icon={faLinkedin}
             style={{ color: '#0077b5' }}

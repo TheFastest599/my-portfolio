@@ -109,7 +109,7 @@ function Contactus() {
                 <ReactTyped
                   className="mt-2 text-sm md:text-base  min-h-40 sm:min-h-36 lg:text-lg text-justify font-medium col-span-2"
                   strings={[user.contactMeDescription]}
-                  typeSpeed={30}
+                  typeSpeed={22}
                 />
               )}
 
