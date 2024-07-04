@@ -3,15 +3,16 @@ import globalContext from '../context/global/globalContext';
 import ProjectsItem from './ProjectsItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faArrowRight,
-  faArrowLeft,
+  faAngleDown,
+  faAngleUp,
   faSliders,
 } from '@fortawesome/free-solid-svg-icons';
 
 function Projects() {
   const gcontext = useContext(globalContext);
-  const { user, publicUrl, refStore, windowWidth } = gcontext;
+  const { user, publicUrl, refStore } = gcontext;
 
+  const [displayCount, setDisplayCount] = useState(6);
   // Open and close the modal
   const [open, setOpen] = useState(false);
   // Prevent scrolling when the modal is open
@@ -40,7 +41,11 @@ function Projects() {
     );
   };
 
-  // -----------------------------------------------
+  // useEffect(() => {
+  //   if (open) {
+  //     setTempSelectedTechnologies(selectedTechnologies);
+  //   }
+  // }, [open, selectedTechnologies]);
 
   // Filter projects based on selected technologies
 
@@ -55,40 +60,6 @@ function Projects() {
       project.stack.includes(technology)
     );
   });
-
-  // -------------------------------------------------
-
-  // Pagination
-
-  const [page, setPage] = useState(0);
-  const [projectsPerPage, setProjectsPerPage] = useState(6);
-  const [noOfProject, setNoOfPorject] = useState(filteredProjects.length);
-  let noOfPages = Math.ceil(noOfProject / projectsPerPage);
-
-  useEffect(() => {
-    windowWidth < 1024 ? setProjectsPerPage(4) : setProjectsPerPage(6);
-  }, [windowWidth]);
-
-  // Set the number of projects when the filtered projects change
-  useEffect(() => {
-    setNoOfPorject(filteredProjects.length);
-    noOfPages = Math.ceil(noOfProject / projectsPerPage);
-  }, [filteredProjects.length]);
-
-  // Next and Previous buttons
-  const next = () => {
-    if (page === noOfPages - 1) return;
-
-    setPage(page + 1);
-  };
-
-  const prev = () => {
-    if (page === 0) return;
-
-    setPage(page - 1);
-  };
-
-  // -------------------------------------------------
 
   return (
     <div
@@ -108,12 +79,11 @@ function Projects() {
           onClick={() => {
             setSelectedTechnologies([]);
             setOpen(true);
-            setPage(0);
           }}
         >
           <FontAwesomeIcon className="text-white" icon={faSliders} size="xl" />
           {selectedTechnologies.length > 0 && (
-            <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-azure-radiance   rounded-full -top-2 -end-2 ">
+            <div class="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-azure-radiance   rounded-full -top-2 -end-2 ">
               {selectedTechnologies.length}
             </div>
           )}
@@ -142,6 +112,13 @@ function Projects() {
                 <h3 className="text-xl font-semibold text-gray-900 ">
                   Filter Projects
                 </h3>
+                <button
+                  type="button"
+                  className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center "
+                  data-modal-hide="default-modal"
+                >
+                  <span className="sr-only">Close modal</span>
+                </button>
               </div>
               {/* <!-- Modal body --> */}
               <div className="p-4 md:p-5 space-y-4 text-sm md:text-base leading-relaxed text-gray-500 ">
@@ -191,28 +168,20 @@ function Projects() {
         </div>
       )}
 
-      {/* Project Items */}
+      {/* Cards */}
       {filteredProjects.length > 0 && (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pb-10 mt-12 ">
-          {filteredProjects
-            .slice(
-              page * projectsPerPage,
-              Math.min(
-                page * projectsPerPage + projectsPerPage,
-                filteredProjects.length
-              )
-            )
-            .map((projectKey, index) => {
-              const project = user.projects[projectKey];
-              return (
-                <ProjectsItem
-                  key={index}
-                  projectId={index}
-                  publicUrl={publicUrl}
-                  project={project}
-                />
-              );
-            })}
+          {filteredProjects.slice(0, displayCount).map((projectKey, index) => {
+            const project = user.projects[projectKey];
+            return (
+              <ProjectsItem
+                key={index}
+                projectId={index}
+                publicUrl={publicUrl}
+                project={project}
+              />
+            );
+          })}
         </div>
       )}
       {filteredProjects.length === 0 && (
@@ -220,53 +189,29 @@ function Projects() {
           No projects available.
         </h1>
       )}
-      {/* Pagination */}
-      <div className="flex justify-center items-center text-center font-poppins space-x-4 text-sm">
-        {filteredProjects.length > 0 && (
-          <button
-            className={` text-white rounded-lg py-2 px-3 sm:px-6 transition-all duration-200 ease-in-out ${
-              page === 0 ? 'bg-gray-400' : 'bg-shark hover:bg-gray-600'
-            } shadow-lg`}
-            disabled={page === 0}
-            onClick={() => {
-              prev();
-            }}
-          >
-            <FontAwesomeIcon icon={faArrowLeft} />
-          </button>
-        )}
-
-        <div className="flex flex-wrap">
-          {Array.from({ length: noOfPages }, (_, i) => (
+      {Object.keys(filteredProjects).length > 6 && (
+        <div className="text-center mt-4">
+          {displayCount < Object.keys(filteredProjects).length ? (
             <button
-              key={i}
-              className={`flex justify-center items-center rounded-lg w-7 h-7 mx-1 sm:w-10 sm:h-10 sm:mx-2 ${
-                page === i ? 'bg-shark text-white shadow-md' : 'font-medium'
-              }`}
-              onClick={() => {
-                setPage(i);
-              }}
+              className=" bg-shark text-white rounded-lg py-2 px-4 transition-all duration-200 ease-in-out hover:px-10"
+              onClick={() =>
+                setDisplayCount(Object.keys(filteredProjects).length)
+              }
             >
-              {i + 1}
+              <span className="mx-2">View More</span>
+              <FontAwesomeIcon icon={faAngleDown} size="lg" />
             </button>
-          ))}
+          ) : (
+            <button
+              className="bg-shark text-white rounded-lg py-2 px-4 transition-all duration-200 ease-in-out hover:px-10"
+              onClick={() => setDisplayCount(6)}
+            >
+              <span className="mx-2">View Less</span>
+              <FontAwesomeIcon icon={faAngleUp} size="lg" />
+            </button>
+          )}
         </div>
-        {filteredProjects.length > 0 && (
-          <button
-            className={` text-white rounded-lg py-2 px-3 sm:px-6 transition-all duration-200 ease-in-out ${
-              page === noOfPages - 1
-                ? 'bg-gray-400'
-                : 'bg-shark hover:bg-gray-600'
-            } shadow-lg`}
-            disabled={page === noOfPages - 1}
-            onClick={() => {
-              next();
-            }}
-          >
-            <FontAwesomeIcon icon={faArrowRight} />
-          </button>
-        )}
-      </div>
+      )}
     </div>
   );
 }

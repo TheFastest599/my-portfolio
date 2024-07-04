@@ -103,15 +103,15 @@
       "description": "Your notebook to save your Notes,Todos and Email Reminders in the cloud! MyNotebook, your go-to platform for streamlined note-taking, task management, and future planning. Powered by the MERN (MongoDB, Express.js, React, Node.js) stack, our small but mighty project is designed to simplify your daily life by providing a seamless and efficient way to organize your thoughts, tasks, and reminders.",
       "image": "/assests/projects/mynotebook.jpg",
       "stack": ["React.js", "Node.js", "Express.js", "MongoDB", "Bootstrap"],
-      "github": "https://github.com/TheFastest599/my-portfolio",
-      "live": "http://45.90.13.219:6222/"
+      "github": "https://github.com/TheFastest599/mynotebook",
+      "live": "https://mynotebook-backend-817b.onrender.com"
     },
     "My Portfolio": {
       "name": "My Portfolio",
       "description": "This is my personal portfolio website. It is a simple, clean, and responsive website that showcases my projects, skills,education,experience and contact information. The website is hosted on Netlify.",
       "image": "/assests/projects/my-portfolio.jpg",
       "stack": ["React.js", "Node.js", "Tailwind CSS"],
-      "github": "https://github.com/TheFastest599/MyNotebook",
+      "github": "https://github.com/TheFastest599/my-portfolio",
       "live": "https://anirban-saha-portfolio.netlify.app"
     },
     "DOST Web": {
@@ -120,7 +120,7 @@
       "image": "/assests/projects/dost.jpg",
       "stack": ["HTML", "CSS", "Javascript", "Bootstrap", "Python", "Flask"],
       "github": "https://github.com/assistantdost/Web",
-      "live": "http://45.90.13.218:6931"
+      "live": "http://45.90.12.101:7076"
     },
     "Library Management System ": {
       "name": "Library Management System",
@@ -182,7 +182,7 @@
       "link": "https://bcetdgp.ac.in",
       "image": "/assests/education/bcet.png",
       "period": "2022 - 2026 | Pursuing B.Tech in Computer Science & Engineering",
-      "grade": "7.6 (Till 2nd Semester)"
+      "grade": "7.73 - 1st Sem | 7.66 - 2nd Sem | 7.82 - 3rd Sem"
     },
     "school": {
       "name": "Maharishi Vidya Mandir Senior Secondary School, Silpukhuri,Guwahati",

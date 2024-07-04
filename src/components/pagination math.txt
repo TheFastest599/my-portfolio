@@ -1,0 +1,8 @@
+filtered projects - final length
+
+projects per page  = 6
+number of pages  = Math.ceil(len(filteredProjects)/projects per page)
+0:
+0*6,0*6 + 6
+1*6,1*6 + 6
+2*6,min(2*6+6,len(filteredProjects))
