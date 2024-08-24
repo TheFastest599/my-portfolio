@@ -120,7 +120,7 @@
       "image": "/assests/projects/dost.jpg",
       "stack": ["HTML", "CSS", "Javascript", "Bootstrap", "Python", "Flask"],
       "github": "https://github.com/assistantdost/Web",
-      "live": "http://45.90.12.101:7076"
+      "live": "http://45.90.12.30:7076"
     },
     "Library Management System ": {
       "name": "Library Management System",
@@ -195,36 +195,41 @@
   },
   "experience": {
     "1": {
+      "period": "August 2024 - Present",
+      "tittle": "Organiser at Code Vision BCET",
+      "description": "At Code Vision, Bengal College of Engineering & Technology (BCET), Durgapur, I serve as a Organiser. My role involves organizing a variety of coding events, workshops, and seminars to foster a strong coding environment among the student body."
+    },
+    "2": {
       "period": "January 2024",
       "tittle": "2nd in CODE OF DUTY and 3rd in CODE ERROR",
       "description": "I secured 2nd podition in CODE OF DUTY and 3rd position in CODE ERROR of the event CYBERVERSE 2024 organised by Cybercell Club of BCET."
     },
-    "2": {
-      "period": "November 2023 - Present",
+    "3": {
+      "period": "November 2023",
       "tittle": "Coordinator at Code Vision BCET",
       "description": "At Code Vision, Bengal College of Engineering & Technology (BCET), Durgapur, I serve as a Coordinator. My role involves organizing a variety of coding events, workshops, and seminars to foster a strong coding environment among the student body."
     },
-    "3": {
+    "4": {
       "period": "October 2023",
       "tittle": "Swachh Bharat Ekk kadam swachhta ki oar event by NSS BCET",
       "description": "I participated in the Swachh Bharat Ekk kadam swachhta ki oar event organised by the NSS BCET. The event was aimed at promoting cleanliness and hygiene in the local community."
     },
-    "4": {
+    "5": {
       "period": "September 2023",
       "tittle": "Member of NSS BCET",
       "description": "I joined the National Service Scheme (NSS) at Bengal College of Engineering & Technology (BCET), Durgapur, in September 2023. I am actively involved in various social service activities ."
     },
-    "5": {
+    "6": {
       "period": "September 2023",
       "tittle": "Volunteering in FIESTA 2K23",
       "description": "I volunteered in FIESTA 2K23 organised by the Enterpreneurship Development Cell(EDC) of BCET. The event was aimed at promoting innovation and entrepreneurship among students."
     },
-    "6": {
+    "7": {
       "period": "September 2023",
       "tittle": "2nd in CODEJAM HACKATHON",
       "description": "Our team (Edgerunners) secured 2nd place in the CODEJAM HACKATHON  organised by the CODE VISON Club of BCET."
     },
-    "7": {
+    "8": {
       "period": "April 2023 - Present",
       "tittle": "Coordinater at EDC BCET",
       "description": "I am currently working as a Coordinater at Entrepreneurship Development Cell, Bengal College of Engineering & Technology (BCET), Durgapur. I take part in organizing various events, workshops, and seminars to promote entrepreneurship and innovation among students."
