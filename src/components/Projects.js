@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useState, useEffect, useRef } from 'react';
 import globalContext from '../context/global/globalContext';
 import ProjectsItem from './ProjectsItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -63,7 +63,8 @@ function Projects() {
   const [page, setPage] = useState(0);
   const [projectsPerPage, setProjectsPerPage] = useState(6);
   const [noOfProject, setNoOfPorject] = useState(filteredProjects.length);
-  let noOfPages = Math.ceil(noOfProject / projectsPerPage);
+  // let noOfPages = Math.ceil(noOfProject / projectsPerPage);
+  const noOfPages = useRef(Math.ceil(noOfProject / projectsPerPage));
 
   useEffect(() => {
     windowWidth < 1024 ? setProjectsPerPage(4) : setProjectsPerPage(6);
@@ -72,12 +73,13 @@ function Projects() {
   // Set the number of projects when the filtered projects change
   useEffect(() => {
     setNoOfPorject(filteredProjects.length);
-    noOfPages = Math.ceil(noOfProject / projectsPerPage);
+    noOfPages.current = Math.ceil(noOfProject / projectsPerPage);
+    // eslint-disable-next-line
   }, [filteredProjects.length]);
 
   // Next and Previous buttons
   const next = () => {
-    if (page === noOfPages - 1) return;
+    if (page === noOfPages.current - 1) return;
 
     setPage(page + 1);
   };
@@ -92,7 +94,7 @@ function Projects() {
 
   return (
     <div
-      className="container w-full  mx-auto px-6 md:px-6 min-h-screen mb-28 "
+      className="container   mx-auto px-6 md:px-6 mb-28 min-h-screen md:min-h-[80vh] lg:min-h-[70vh] xl:min-h-[60vh]"
       ref={refStore.projectsRef}
     >
       {/* Heading */}
@@ -237,7 +239,7 @@ function Projects() {
         )}
 
         <div className="flex flex-wrap">
-          {Array.from({ length: noOfPages }, (_, i) => (
+          {Array.from({ length: noOfPages.current }, (_, i) => (
             <button
               key={i}
               className={`flex justify-center items-center rounded-lg w-7 h-7 mx-1 sm:w-10 sm:h-10 sm:mx-2 ${
@@ -254,11 +256,11 @@ function Projects() {
         {filteredProjects.length > 0 && (
           <button
             className={` text-white rounded-lg py-2 px-3 sm:px-6 transition-all duration-200 ease-in-out ${
-              page === noOfPages - 1
+              page === noOfPages.current - 1
                 ? 'bg-gray-400'
                 : 'bg-shark hover:bg-gray-600'
             } shadow-lg`}
-            disabled={page === noOfPages - 1}
+            disabled={page === noOfPages.current - 1}
             onClick={() => {
               next();
             }}

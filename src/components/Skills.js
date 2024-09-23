@@ -8,9 +8,8 @@ function Skills() {
   const { user, publicUrl, refStore } = gcontext;
   return (
     <div
-      className="container w-80 my-32  mx-auto px-6 md:px-6 min-h-screen"
+      className="container my-32 mx-auto px-6 md:px-6 min-h-screen  lg:min-h-[96vh] xl:min-h-[80vh]"
       ref={refStore.skillsRef}
-      style={{ width: '100vw' }}
     >
       <h1 className="text-left text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-poppins font-bold text-slate-900">
         Skills

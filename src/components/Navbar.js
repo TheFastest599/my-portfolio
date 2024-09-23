@@ -124,7 +124,7 @@ function Navbar() {
   return (
     <div className="fixed top-0 z-10" style={navStatus()}>
       {windowWidth > 768 ? (
-        <nav className="flex items-center justify-between py-2 font-poppins container mx-auto px-2 md:px-6">
+        <nav className="flex items-center justify-between py-2 font-poppins container  mx-auto px-2 md:px-6 max-w-8xl">
           <div>
             <ul className="flex space-x-4">
               <li>

@@ -37,12 +37,14 @@ function App() {
         />
       </div>
       <Navbar></Navbar>
-      <HeroSection></HeroSection>
-      <Skills></Skills>
-      <Projects></Projects>
-      <Experience></Experience>
-      <Education></Education>
-      <Contactus></Contactus>
+      <div className="w-full max-w-8xl mx-auto">
+        <HeroSection></HeroSection>
+        <Skills></Skills>
+        <Projects></Projects>
+        <Experience></Experience>
+        <Education></Education>
+        <Contactus></Contactus>
+      </div>
     </GlobalState>
   );
 }

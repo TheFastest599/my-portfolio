@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import globalContext from '../context/global/globalContext';
 import {
@@ -49,19 +49,19 @@ function HeroSection() {
         onClick={() => {
           const link = document.createElement('a');
           link.href = `${user.resume}`;
-          link.download = 'Anirban_Saha_resume.pdf';
+          link.download = 'Anirban Saha CV.pdf';
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
         }}
-        className="absolute bottom-40 left-10 msm:left-10 sm:left-10 md:left-20 bg-international-orange font-poppins font-medium text-white rounded-full py-1 px-5 mt-6 md:px-12 md:text-lg md:py-2
+        className="absolute bottom-36 left-10 msm:left-10 sm:left-10 md:left-20 bg-international-orange font-poppins font-medium text-white rounded-full py-1 px-5 mt-6 md:px-12 md:text-lg md:py-2
             md:mt-12 focus:ring focus:ring-orange-300 focus:outline-none hover:drop-shadow-lg transition duration-300 ease-in-out
             hover:-translate-y-1 hover:scale-110"
       >
         Hire Me!
       </button>
       {/* Social Links */}
-      <div className="absolute bottom-20 left-10 msm:left-10 sm:left-10 md:left-20 flex items-center justify-between min-w-48 ms-2 sm:min-w-60 md:min-w-80 mt-20 sm:mt-32">
+      <div className="absolute bottom-16 left-10 msm:left-10 sm:left-10 md:left-20 flex items-center justify-between min-w-48 ms-2 sm:min-w-60 md:min-w-80 mt-20 sm:mt-32">
         <FontAwesomeIcon
           icon={faLinkedin}
           style={{ color: '#0077b5' }}

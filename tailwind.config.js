@@ -28,6 +28,7 @@ module.exports = {
         88: '22rem',
         112: '28rem',
         128: '32rem',
+        '8xl': '90rem',
       },
       screens: {
         msm: '414px',

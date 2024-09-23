@@ -9,9 +9,8 @@ function Experience() {
   const [displayCount, setDisplayCount] = useState(4);
   return (
     <div
-      className="container w-80  mx-auto px-6 md:px-6 min-h-screen my-28"
+      className="container   mx-auto px-6 md:px-6 my-28 min-h-screen md:min-h-[80vh] lg:min-h-[70vh] xl:min-h-[60vh]"
       ref={refStore.experienceRef}
-      style={{ width: '100vw' }}
     >
       {/* Heading */}
       <h1 className="text-left text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-poppins font-bold text-slate-900">

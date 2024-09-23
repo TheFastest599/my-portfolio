@@ -10,7 +10,7 @@
   },
   "email": "ribhusaha2003@gmail.com",
   "phone": "+91 9395098694",
-  "bigDp": "/assests/profile-pic (17).png",
+  "bigDp": "/assests/profile-pic.png",
   "smallDp": "/assests/small-profile.png",
   "contactMeDescription": "Thank You for visiting my Portfolio Website!!🤗🤗 If you are interested in working with me, please feel free to reach out to me. I am always open to new opportunities and challenges. Connect with me over the socials or drop me an email. I will get back to you as soon as possible.",
   "skills": {
@@ -120,7 +120,7 @@
       "image": "/assests/projects/dost.jpg",
       "stack": ["HTML", "CSS", "Javascript", "Bootstrap", "Python", "Flask"],
       "github": "https://github.com/assistantdost/Web",
-      "live": "http://45.90.12.30:7076"
+      "live": "https://web-dost.onrender.com"
     },
     "Library Management System ": {
       "name": "Library Management System",
@@ -182,7 +182,7 @@
       "link": "https://bcetdgp.ac.in",
       "image": "/assests/education/bcet.png",
       "period": "2022 - 2026 | Pursuing B.Tech in Computer Science & Engineering",
-      "grade": "7.73 - 1st Sem | 7.66 - 2nd Sem | 7.82 - 3rd Sem"
+      "grade": "7.73 - 1st Sem | 7.66 - 2nd Sem | 7.82 - 3rd Sem | 6.62 - 4th Sem"
     },
     "school": {
       "name": "Maharishi Vidya Mandir Senior Secondary School, Silpukhuri,Guwahati",
@@ -235,5 +235,5 @@
       "description": "I am currently working as a Coordinater at Entrepreneurship Development Cell, Bengal College of Engineering & Technology (BCET), Durgapur. I take part in organizing various events, workshops, and seminars to promote entrepreneurship and innovation among students."
     }
   },
-  "resume": "/assests/ANIRBAN SAHA –Resume.pdf"
+  "resume": "/assests/Anirban Saha CV.pdf"
 }
