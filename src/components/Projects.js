@@ -61,25 +61,31 @@ function Projects() {
   // Pagination
 
   const [page, setPage] = useState(0);
-  const [projectsPerPage, setProjectsPerPage] = useState(6);
-  const [noOfProject, setNoOfPorject] = useState(filteredProjects.length);
-  // let noOfPages = Math.ceil(noOfProject / projectsPerPage);
-  const noOfPages = useRef(Math.ceil(noOfProject / projectsPerPage));
+  const projectsPerPageRef = useRef(6);
+  const [noOfProject, setNoOfProject] = useState(filteredProjects.length);
+  const [noOfPages, setNoOfPages] = useState(
+    Math.ceil(noOfProject / projectsPerPageRef.current)
+  );
 
   useEffect(() => {
-    windowWidth < 1024 ? setProjectsPerPage(4) : setProjectsPerPage(6);
-  }, [windowWidth]);
+    projectsPerPageRef.current = windowWidth < 1024 ? 4 : 6;
+    setNoOfPages(Math.ceil(noOfProject / projectsPerPageRef.current));
+  }, [windowWidth, noOfProject]);
 
   // Set the number of projects when the filtered projects change
   useEffect(() => {
-    setNoOfPorject(filteredProjects.length);
-    noOfPages.current = Math.ceil(noOfProject / projectsPerPage);
+    setNoOfProject(Object.keys(filteredProjects).length);
+    setNoOfPages(
+      Math.ceil(
+        Object.keys(filteredProjects).length / projectsPerPageRef.current
+      )
+    );
     // eslint-disable-next-line
   }, [filteredProjects.length]);
 
   // Next and Previous buttons
   const next = () => {
-    if (page === noOfPages.current - 1) return;
+    if (page === noOfPages - 1) return;
 
     setPage(page + 1);
   };
@@ -198,9 +204,9 @@ function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pb-10 mt-12 ">
           {filteredProjects
             .slice(
-              page * projectsPerPage,
+              page * projectsPerPageRef.current,
               Math.min(
-                page * projectsPerPage + projectsPerPage,
+                page * projectsPerPageRef.current + projectsPerPageRef.current,
                 filteredProjects.length
               )
             )
@@ -239,7 +245,7 @@ function Projects() {
         )}
 
         <div className="flex flex-wrap">
-          {Array.from({ length: noOfPages.current }, (_, i) => (
+          {Array.from({ length: noOfPages }, (_, i) => (
             <button
               key={i}
               className={`flex justify-center items-center rounded-lg w-7 h-7 mx-1 sm:w-10 sm:h-10 sm:mx-2 ${
@@ -256,11 +262,11 @@ function Projects() {
         {filteredProjects.length > 0 && (
           <button
             className={` text-white rounded-lg py-2 px-3 sm:px-6 transition-all duration-200 ease-in-out ${
-              page === noOfPages.current - 1
+              page === noOfPages - 1
                 ? 'bg-gray-400'
                 : 'bg-shark hover:bg-gray-600'
             } shadow-lg`}
-            disabled={page === noOfPages.current - 1}
+            disabled={page === noOfPages - 1}
             onClick={() => {
               next();
             }}

@@ -48,7 +48,7 @@ function ProjectsItem(props) {
         publicUrl={publicUrl}
         projectId={projectId}
       />
-      <div className=" rounded-lg shadow font-poppins  glassBox">
+      <div className=" rounded-lg shadow font-poppins hover:shadow-orange-500/40 hover:shadow-md glassBox">
         <LazyLoadImage
           effect="blur"
           src={publicUrl + project.image}
