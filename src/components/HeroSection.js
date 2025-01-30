@@ -7,6 +7,7 @@ import {
   faXTwitter,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
+import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { ReactTyped } from 'react-typed';
 
 function HeroSection() {
@@ -49,7 +50,7 @@ function HeroSection() {
         onClick={() => {
           const link = document.createElement('a');
           link.href = `${user.resume}`;
-          link.download = 'Anirban Saha CV.pdf';
+          link.download = 'Anirban Saha Resume.pdf';
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
@@ -58,7 +59,7 @@ function HeroSection() {
             md:mt-12 focus:ring focus:ring-orange-300 focus:outline-none hover:drop-shadow-lg transition duration-300 ease-in-out
             hover:-translate-y-1 hover:scale-110"
       >
-        Hire Me!
+        Resume <FontAwesomeIcon icon={faFileArrowDown} />
       </button>
       {/* Social Links */}
       <div className="absolute bottom-16 left-10 msm:left-10 sm:left-10 md:left-20 flex items-center justify-between min-w-48 ms-2 sm:min-w-60 md:min-w-80 mt-20 sm:mt-32">
