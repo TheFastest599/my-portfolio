@@ -10,7 +10,7 @@
   },
   "email": "ribhusaha2003@gmail.com",
   "phone": "+91 9395098694",
-  "bigDp": "/assests/profile-pic.png",
+  "bigDp": "/assests/profile-pic-new.jpg",
   "smallDp": "/assests/small-profile.png",
   "contactMeDescription": "Thank You for visiting my Portfolio Website!!🤗🤗 If you are interested in working with me, please feel free to reach out to me. I am always open to new opportunities and challenges. Connect with me over the socials or drop me an email. I will get back to you as soon as possible.",
   "skills": {
@@ -30,22 +30,6 @@
       "name": "React.js",
       "image": "/assests/skills/react.png"
     },
-    "Node.js": {
-      "name": "Node.js",
-      "image": "/assests/skills/nodejs.png"
-    },
-    "Express.js": {
-      "name": "Express.js",
-      "image": "/assests/skills/express.png"
-    },
-    "MongoDB": {
-      "name": "MongoDB",
-      "image": "/assests/skills/mongodb.png"
-    },
-    "MySQL": {
-      "name": "MySQL",
-      "image": "/assests/skills/mysql.png"
-    },
     "Bootstrap": {
       "name": "Bootstrap",
       "image": "/assests/skills/bootstrap.png"
@@ -54,9 +38,13 @@
       "name": "Tailwind CSS",
       "image": "/assests/skills/tailwindcss.png"
     },
-    "GitHub": {
-      "name": "GitHub",
-      "image": "/assests/skills/github.png"
+    "Node.js": {
+      "name": "Node.js",
+      "image": "/assests/skills/nodejs.png"
+    },
+    "Express.js": {
+      "name": "Express.js",
+      "image": "/assests/skills/express.png"
     },
     "Python": {
       "name": "Python",
@@ -66,17 +54,54 @@
       "name": "Flask",
       "image": "/assests/skills/flask.png"
     },
+    "Fast API": {
+      "name": "Fast API",
+      "image": "/assests/skills/fastapi.png"
+    },
+    "Django": {
+      "name": "Django",
+      "image": "/assests/skills/django.png"
+    },
     "Pandas Python": {
       "name": "Pandas Python",
       "image": "/assests/skills/pandas.png"
     },
+    "MongoDB": {
+      "name": "MongoDB",
+      "image": "/assests/skills/mongodb.png"
+    },
+    "MySQL": {
+      "name": "MySQL",
+      "image": "/assests/skills/mysql.png"
+    },
+    "PostgreSQL": {
+      "name": "PostgreSQL",
+      "image": "/assests/skills/postgresql.png"
+    },
+
+    "GitHub": {
+      "name": "GitHub",
+      "image": "/assests/skills/github.png"
+    },
+    "Git": {
+      "name": "Git",
+      "image": "/assests/skills/git.png"
+    },
+    "Docker": {
+      "name": "Docker",
+      "image": "/assests/skills/docker.png"
+    },
+    "Nginx": {
+      "name": "Nginx",
+      "image": "/assests/skills/nginx.png"
+    },
+    "Firebase": {
+      "name": "Firebase",
+      "image": "/assests/skills/firebase.png"
+    },
     "C": {
       "name": "C",
       "image": "/assests/skills/c.png"
-    },
-    "C++": {
-      "name": "C++",
-      "image": "/assests/skills/cpp.png"
     }
   },
   "technologies": [
@@ -84,21 +109,35 @@
     "CSS",
     "Javascript",
     "React.js",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "MySQL",
     "Bootstrap",
     "Tailwind CSS",
-    "GitHub",
+    "Node.js",
+    "Express.js",
     "Python",
     "Flask",
-    "Pandas",
-    "C",
-    "C++"
+    "Fast API",
+    "Django",
+    "Pandas Python",
+    "MongoDB",
+    "MySQL",
+    "PostgreSQL",
+    "GitHub",
+    "Git",
+    "Docker",
+    "Nginx",
+    "Firebase",
+    "C"
   ],
   "projects": {
-    "myNotebook": {
+    "Code Vision Website": {
+      "name": "Code Vision Website",
+      "description": "Code Vision is a coding club at Bengal College of Engineering and Technology (BCET), Durgapur. This club serves as a platform for students to learn and enhance their coding skills through various events, workshops, and seminars. It provides information about upcoming events, resources, and a community for coding enthusiasts. The website is easily discoverable on Google under keywords such as 'Code Vision BCET', 'BCET Code Vision', and similar search terms.",
+      "image": "/assests/projects/codevision.jpg",
+      "stack": ["React.js", "Tailwind CSS", "Firebase"],
+      "github": "",
+      "live": "https://codevision-bcet.web.app/"
+    },
+    "My Notebook": {
       "name": "MyNotebook",
       "description": "Your notebook to save your Notes,Todos and Email Reminders in the cloud! MyNotebook, your go-to platform for streamlined note-taking, task management, and future planning. Powered by the MERN (MongoDB, Express.js, React, Node.js) stack, our small but mighty project is designed to simplify your daily life by providing a seamless and efficient way to organize your thoughts, tasks, and reminders.",
       "image": "/assests/projects/mynotebook.jpg",
@@ -106,14 +145,7 @@
       "github": "https://github.com/TheFastest599/mynotebook",
       "live": "https://mynotebook-backend-817b.onrender.com"
     },
-    "My Portfolio": {
-      "name": "My Portfolio",
-      "description": "This is my personal portfolio website. It is a simple, clean, and responsive website that showcases my projects, skills,education,experience and contact information. The website is hosted on Netlify.",
-      "image": "/assests/projects/my-portfolio.jpg",
-      "stack": ["React.js", "Node.js", "Tailwind CSS"],
-      "github": "https://github.com/TheFastest599/my-portfolio",
-      "live": "https://anirban-saha-portfolio.netlify.app"
-    },
+
     "ParcelPro": {
       "name": "ParcelPro",
       "description": "ParcelPro is a courier management system built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It streamlines courier operations with features like secure user authentication, order placement and tracking, real-time status updates, and email notifications. Designed to improve operational efficiency and user experience, ParcelPro is a modern solution for the logistics industry.",
@@ -256,5 +288,52 @@
       "description": "I am currently working as a Coordinater at Entrepreneurship Development Cell, Bengal College of Engineering & Technology (BCET), Durgapur. I take part in organizing various events, workshops, and seminars to promote entrepreneurship and innovation among students."
     }
   },
+  "experienceNew": [
+    {
+      "organisation": "Meridian Voyage",
+      "logo": "/assests/experience/meridian_voyage.jpg",
+      "duration": "February 2025 - Present",
+      "link": "https://www.meridianvoyage.com",
+      "positions": [
+        {
+          "period": "February 2025",
+          "tittle": "Python Developer Intern",
+          "description": "As a Python Intern at Meridian Voyage, I primarily focus on building modern, responsive, and user-friendly client-side applications and dashboards. Leveraging my expertise in web development, I design and implement intuitive interfaces that enhance user experience. In addition to front-end development, I contribute to backend integration by building APIs using Python to streamline data communication and integration between systems. I have also worked on creating datasets through web scraping and bot technologies, enabling efficient data collection. Furthermore, I utilize Python libraries such as Pandas and NumPy for data analysis and design dashboards for Business Intelligence, providing actionable insights and visual representations to support decision-making processes."
+        }
+      ]
+    },
+    {
+      "organisation": "Google Developer Groups on Campus BCET",
+      "logo": "/assests/experience/gdg_bcet.jpg",
+      "duration": "September 2024 - Present",
+      "link": "https://gdg.community.dev/gdg-on-campus-bengal-college-of-engineering-and-technology-durgapur-india/",
+      "positions": [
+        {
+          "period": "September 2024",
+          "tittle": "Web Lead",
+          "description": "As the Web Development Team Lead for Google Developer Groups on Campus BCET, I bring a solid foundation in web development acquired through my college studies. I am eager to lead and inspire a community of talented developers, leveraging my skills to create innovative and impactful projects. Let's build something extraordinary together!"
+        }
+      ]
+    },
+    {
+      "organisation": "Code Vision BCET",
+      "logo": "/assests/experience/code_vision.jpg",
+      "duration": "November 2023 - Present",
+      "link": "https://codevision-bcet.web.app",
+      "positions": [
+        {
+          "period": "August 2024",
+          "tittle": "Organiser",
+          "description": "At Code Vision, BCET, I take the lead in organizing coding events, workshops, and seminars to cultivate a vibrant and engaging coding culture among students."
+        },
+        {
+          "period": "November 2023",
+          "tittle": "Coordinator",
+          "description": "At Code Vision, BCET, I serve as a Coordinator, organizing coding events, workshops, and seminars to foster a strong coding culture among students."
+        }
+      ]
+    }
+  ],
+
   "resume": "/assests/Anirban Saha Resume.pdf"
 }

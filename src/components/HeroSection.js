@@ -25,11 +25,11 @@ function HeroSection() {
         <img
           src={publicUrl + user.bigDp}
           alt="heroPic"
-          className="w-72 sm:w-80 md:w-88 lg:w-96 xl:w-128 rounded-full "
+          className="w-72 sm:w-80 md:w-96 lg:w-128 rounded-full "
         />
       </div>
       {/* Name and Details */}
-      <div className="absolute top-56 left-10 msm:top-64 msm:left-10 sm:top-80 sm:left-10  md:top-20 md:left-20 ">
+      <div className="absolute top-60 left-10 msm:top-64 msm:left-10 sm:top-80 sm:left-10  md:top-20 md:left-20 ">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bebas font-light">
           My Name is
         </h1>

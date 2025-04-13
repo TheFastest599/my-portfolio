@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faLink, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import {
+  faLink,
+  faArrowUpRightFromSquare,
+  faArrowRight,
+} from '@fortawesome/free-solid-svg-icons';
 import Popover from '@mui/material/Popover';
 import Typography from '@mui/material/Typography';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -53,7 +57,7 @@ function ProjectsItem(props) {
           effect="blur"
           src={publicUrl + project.image}
           alt="projects"
-          className="rounded-t-lg min-h-32"
+          className="rounded-t-lg min-h-32 cursor-pointer"
           onClick={e => {
             setOpenModal(true);
           }}
@@ -74,7 +78,7 @@ function ProjectsItem(props) {
             {project.name}
           </h5>
           <p
-            className=" font-normal text-sm md:text-base min-h-10 mb-3"
+            className=" font-normal text-sm md:text-base min-h-10 mb-3 cursor-pointer"
             id={projectId + 'desc'}
             onClick={e => {
               setOpenModal(true);
@@ -137,27 +141,29 @@ function ProjectsItem(props) {
             </div>
             {/* github and live link */}
             <div className="bg-shark text-white text-sm rounded-lg">
-              <button
-                className=" px-1.5 py-1.5 mx-1  transition duration-300 ease-in-out
+              {project.github ? (
+                <button
+                  className=" px-1.5 py-1.5 mx-1  transition duration-300 ease-in-out
             hover:-translate-y-1 hover:scale-125"
-              >
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  size="lg"
-                  onClick={() => {
-                    window.open(project.github, '_blank');
-                  }}
-                />
-              </button>
+                >
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    size="lg"
+                    onClick={() => {
+                      window.open(project.github, '_blank');
+                    }}
+                  />
+                </button>
+              ) : null}
               {project.live ? (
                 <button
-                  className=" pe-1.5 py-1.5 mx-1 hover:underline text-orange-600 font-poppins font-medium"
+                  className=" px-1.5 py-1.5 mx-1 transition duration-300 ease-in-out
+            hover:-translate-y-1 hover:scale-125 text-orange-600 font-poppins font-medium"
                   onClick={() => {
                     window.open(project.live, '_blank');
                   }}
                 >
-                  Live<span> </span>
-                  <FontAwesomeIcon icon={faLink} />
+                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </button>
               ) : null}
             </div>
