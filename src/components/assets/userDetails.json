@@ -129,6 +129,20 @@
     "C"
   ],
   "projects": {
+    "Meridian Voyage": {
+      "name": "Meridian Voyage - Internship Project",
+      "description": " Meridian Voyage is a comprehensive data analytics company specializing in prescriptive, diagnostic, descriptive, and predictive analytics. We empower businesses with intelligent insights to make data-driven decisions, with a strong focus on US stock market data.\n My responsibilities and contributions include:\n - Designed and developed the entire frontend of the platform using React.js and Daisy UI, ensuring a responsive, modern, and intuitive user interface.\n - Built interactive visualizations and graphs to present complex stock market trends and financial data clearly.\n - Developed robust RESTful APIs using Django, integrated with a PostgreSQL database optimized for handling large-scale stock data.\n - Created datasets via web scraping and automated bot technologies to collect up-to-date financial data.\n - Conducted data analysis using Python libraries and built Business Intelligence dashboards to help clients derive actionable insights.\n - Set up the Docker configuration, deployed a complete client environment, configured the Nginx server, and enabled HTTPS for production.\n - Implemented secure email authentication systems, including signup, password reset, and email verification workflows.\n",
+      "image": "/assests/projects/meridianvoyage.jpg",
+      "stack": [
+        "Python",
+        "Django",
+        "Docker",
+        "Nginx",
+        "React.js",
+        "Daisy UI",
+        "PostgreSQL"
+      ]
+    },
     "Code Vision Website": {
       "name": "Code Vision Website",
       "description": "Code Vision is a coding club at Bengal College of Engineering and Technology (BCET), Durgapur. This club serves as a platform for students to learn and enhance their coding skills through various events, workshops, and seminars. It provides information about upcoming events, resources, and a community for coding enthusiasts. The website is easily discoverable on Google under keywords such as 'Code Vision BCET', 'BCET Code Vision', and similar search terms.",
@@ -230,7 +244,7 @@
       "link": "https://bcetdgp.ac.in",
       "image": "/assests/education/bcet.png",
       "period": "2022 - 2026 | Pursuing B.Tech in Computer Science & Engineering",
-      "grade": "7.73 - 1st Sem | 7.66 - 2nd Sem | 7.82 - 3rd Sem | 6.62 - 4th Sem"
+      "grade": "7.73 - 1st Sem | 7.66 - 2nd Sem | 7.82 - 3rd Sem | 6.62 - 4th Sem | 7.75 - 5th Sem "
     },
     "school": {
       "name": "Maharishi Vidya Mandir Senior Secondary School, Silpukhuri,Guwahati",

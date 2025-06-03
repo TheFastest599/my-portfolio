@@ -62,7 +62,11 @@ function ProjectItemModal(props) {
                   />
                 </div>
                 <div className="px-4 py-2 md:px-5 md:py-3 font-normal text-sm md:text-base min-h-10 leading-relaxed mx-3">
-                  {project.description}
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: project.description.replace(/\n/g, '<br />'),
+                    }}
+                  />
                   {project.live && (
                     <p className="py-2">
                       Live link -{' '}
