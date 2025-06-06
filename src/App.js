@@ -1,5 +1,6 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useContext, useEffect } from 'react';
 import './App.css';
+import globalContext from './context/global/globalContext';
 import Education from './components/Education';
 import HeroSection from './components/HeroSection';
 import Navbar from './components/Navbar';
@@ -8,7 +9,7 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import './output.css';
 import Contactus from './components/Contactus';
-import GlobalState from './context/global/GlobalState';
+import SiteVisits from './components/SiteVisits';
 import Particles from 'react-particles';
 import { loadSlim } from 'tsparticles-slim';
 import particlesOptions from './components/assets/particlesOptions.json';
@@ -26,8 +27,16 @@ function App() {
   const particlesLoaded = useCallback(async container => {
     // await console.log(container);
   }, []);
+
+  const gContext = useContext(globalContext);
+  const { updateInfo } = gContext;
+
+  useEffect(() => {
+    updateInfo();
+  }, []);
+
   return (
-    <GlobalState>
+    <>
       <div style={{ position: 'relative', zIndex: -1 }}>
         <Particles
           id="tsparticles"
@@ -43,9 +52,10 @@ function App() {
         <Projects></Projects>
         <Experience></Experience>
         <Education></Education>
+        <SiteVisits> </SiteVisits>
         <Contactus></Contactus>
       </div>
-    </GlobalState>
+    </>
   );
 }
 
