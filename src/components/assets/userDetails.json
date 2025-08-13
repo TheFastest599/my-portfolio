@@ -30,6 +30,10 @@
       "name": "React.js",
       "image": "/assests/skills/react.png"
     },
+    "Next.js": {
+      "name": "Next.js",
+      "image": "/assests/skills/nextjs.png"
+    },
     "Bootstrap": {
       "name": "Bootstrap",
       "image": "/assests/skills/bootstrap.png"
@@ -109,6 +113,7 @@
     "CSS",
     "Javascript",
     "React.js",
+    "Next.js",
     "Bootstrap",
     "Tailwind CSS",
     "Node.js",
@@ -141,7 +146,8 @@
         "React.js",
         "Daisy UI",
         "PostgreSQL"
-      ]
+      ],
+      "video": "https://www.youtube.com/watch?v=WlCMqtsla1k"
     },
     "Code Vision Website": {
       "name": "Code Vision Website",
@@ -168,13 +174,27 @@
       "github": "https://github.com/TheFastest599/ParcelPro",
       "live": "https://parcelpro.onrender.com"
     },
+    "Finance Tracker": {
+      "name": "Finance Tracker",
+      "description": "Finance Tracker is a personal finance management application that helps users track their income and expenses. It allows users to categorize their transactions, view their financial history, and generate reports to analyze their spending habits. The application is built using Next Js, Zustard, Mongo DB, Shadcn, Tailwind CSS, Recharts and provides a user-friendly interface for managing finances.",
+      "image": "/assests/projects/financetracker.jpg",
+      "stack": ["Next.js", "MongoDB", "Shadcn", "Tailwind CSS"],
+      "github": "https://github.com/TheFastest599/Personal-Finance-Visualizer",
+      "live": "https://finance-visualize.vercel.app"
+    },
+    "Vehicle Tracker": {
+      "name": "Vehicle Tracker",
+      "description": "Advanced Real-time Vehicle Tracking System powered by authentic GPX route data from Bengal College of Engineering and Technology to Durgapur Railway Station. Experience realistic vehicle simulation using actual GPS coordinates recorded from a real journey.",
+      "image": "/assests/projects/vehicletracker.jpg",
+      "stack": ["React.js", "Tailwind CSS"],
+      "github": "https://github.com/TheFastest599/vehicle-tracker",
+      "live": "https://vehicle-tracker-anirban.netlify.app"
+    },
     "DOST Web": {
       "name": "DOST Web",
       "description": "DOST - Your Virtual Assistant Companion! Your reliable virtual assistant designed to simplify your daily tasks and enhance your productivity on the Windows platform. (Windows App currently in development)",
       "image": "/assests/projects/dost.jpg",
-      "stack": ["HTML", "CSS", "Javascript", "Bootstrap", "Python", "Flask"],
-      "github": "https://github.com/TheFastest599/ParcelPro",
-      "live": "https://web-dost.onrender.com"
+      "stack": ["HTML", "CSS", "Javascript", "Bootstrap", "Python", "Flask"]
     },
     "Jhagmag LED Controller": {
       "name": "Jhagmag LED Controller",
@@ -244,7 +264,7 @@
       "link": "https://bcetdgp.ac.in",
       "image": "/assests/education/bcet.png",
       "period": "2022 - 2026 | Pursuing B.Tech in Computer Science & Engineering",
-      "grade": "7.73 - 1st Sem | 7.66 - 2nd Sem | 7.82 - 3rd Sem | 6.62 - 4th Sem | 7.75 - 5th Sem "
+      "grade": "7.73 - 1st Sem | 7.66 - 2nd Sem | 7.82 - 3rd Sem | 6.48 - 4th Sem | 7.75 - 5th Sem | 7.68 - 6th Sem "
     },
     "school": {
       "name": "Maharishi Vidya Mandir Senior Secondary School, Silpukhuri,Guwahati",
@@ -252,7 +272,7 @@
       "link": "https://mvmguwahati-1.org",
       "image": "/assests/education/maharshi-vidya-mandir.png",
       "period": "2010 - 2022 | Class 12 (Science)",
-      "grade": "Class 10 - 92.4% | Class 12 - 84%"
+      "grade": "Class 10 - 92.4% | Class 12 - 82.8%"
     }
   },
   "experience": {
@@ -306,7 +326,7 @@
     {
       "organisation": "Meridian Voyage",
       "logo": "/assests/experience/meridian_voyage.jpg",
-      "duration": "February 2025 - Present",
+      "duration": "February 2025 - May 2025",
       "link": "https://www.meridianvoyage.com",
       "positions": [
         {

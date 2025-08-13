@@ -5,6 +5,7 @@ import {
   faLink,
   faArrowUpRightFromSquare,
   faArrowRight,
+  faVideo,
 } from '@fortawesome/free-solid-svg-icons';
 import Popover from '@mui/material/Popover';
 import Typography from '@mui/material/Typography';
@@ -164,6 +165,17 @@ function ProjectsItem(props) {
                   }}
                 >
                   <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                </button>
+              ) : null}
+              {project.video ? (
+                <button
+                  className=" px-1.5 py-1.5 mx-1 transition duration-300 ease-in-out
+            hover:-translate-y-1 hover:scale-125 text-orange-600 font-poppins font-medium"
+                  onClick={() => {
+                    window.open(project.video, '_blank');
+                  }}
+                >
+                  <FontAwesomeIcon icon={faVideo} />
                 </button>
               ) : null}
             </div>

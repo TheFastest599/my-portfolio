@@ -44,7 +44,7 @@
         "default": "bounce"
       },
       "random": true,
-      "speed": 6,
+      "speed": 4,
       "straight": false
     },
     "number": {

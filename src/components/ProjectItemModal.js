@@ -93,6 +93,19 @@ function ProjectItemModal(props) {
                       </a>
                     </p>
                   )}
+                  {project.video && (
+                    <p className="py-2">
+                      Video link -{' '}
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href={project.video}
+                        className="text-blue-600 hover:text-blue-900"
+                      >
+                        {project.video}
+                      </a>
+                    </p>
+                  )}
                   <div className="flex flex-wrap text-white ">
                     {project.stack.map((element, index) => (
                       <p

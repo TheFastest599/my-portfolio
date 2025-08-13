@@ -45,8 +45,9 @@ function HeroSection() {
           />
         )}
       </div>
+      <a href=""></a>
       {/* Hire Me! */}
-      <button
+      {/* <button
         onClick={() => {
           const link = document.createElement('a');
           link.href = `${user.resume}`;
@@ -60,7 +61,17 @@ function HeroSection() {
             hover:-translate-y-1 hover:scale-110"
       >
         Resume <FontAwesomeIcon icon={faFileArrowDown} />
-      </button>
+      </button> */}
+      <a
+        href="https://drive.google.com/file/d/1LhihqYCPERpODCYLM6PKNVMWYQn3Vw7I/view?usp=sharing"
+        target="_blank"
+        rel="noreferrer"
+        className="absolute bottom-36 left-10 msm:left-10 sm:left-10 md:left-20 bg-international-orange font-poppins font-medium text-white rounded-full py-1 px-5 mt-6 md:px-12 md:text-lg md:py-2
+            md:mt-12 focus:ring focus:ring-orange-300 focus:outline-none hover:drop-shadow-lg transition duration-300 ease-in-out
+            hover:-translate-y-1 hover:scale-110"
+      >
+        Resume <FontAwesomeIcon icon={faFileArrowDown} />
+      </a>
       {/* Social Links */}
       <div className="absolute bottom-16 left-10 msm:left-10 sm:left-10 md:left-20 flex items-center justify-between min-w-48 ms-2 sm:min-w-60 md:min-w-80 mt-20 sm:mt-32">
         <FontAwesomeIcon

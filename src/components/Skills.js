@@ -8,37 +8,31 @@ function Skills() {
   const { user, publicUrl, refStore } = gcontext;
   return (
     <div
-      className="container my-32 mx-auto px-6 md:px-6 min-h-screen  lg:min-h-[96vh] xl:min-h-[80vh]"
+      className="container my-6 sm:my-16 mx-auto px-6 md:px-8 min-h-fit"
       ref={refStore.skillsRef}
     >
-      <h1 className="text-left text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-poppins font-bold text-slate-900">
+      <h1 className="text-left text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-poppins font-bold text-slate-900 mb-8">
         Skills
       </h1>
-      <div className="grid grid-cols-4 md:grid-cols-6 xl:grid-cols-8 gap-6 text-center mt-12">
+      <div className="flex flex-wrap gap-3 md:gap-4 my-10">
         {Object.keys(user.skills).map((skill, index) => {
           const skill_ = user.skills[skill];
           return (
             <div
               key={index}
-              className="flex flex-col justify-center items-center rounded-lg "
+              className="flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 border border-gray-100 hover:border-blue-200"
             >
-              {/* <img
-                width="200"
-                height="200"
-                src={publicUrl + skill_.image}
-                alt="react"
-                loading="lazy"
-              /> */}
               <LazyLoadImage
                 effect="blur"
                 src={publicUrl + skill_.image}
-                alt="react"
-                width="200"
-                height="200"
+                alt={skill_.name}
+                width="24"
+                height="24"
+                className="w-5 h-5 sm:w-7 sm:h-7 object-contain"
               />
-              <p className=" text-base font-poppins font-medium md:text-lg mt-1 md:mt-3">
+              <span className="text-sm sm:text-base font-poppins font-medium text-slate-700 whitespace-nowrap">
                 {skill_.name}
-              </p>
+              </span>
             </div>
           );
         })}
