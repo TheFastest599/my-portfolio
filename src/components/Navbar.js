@@ -81,7 +81,7 @@ function Navbar() {
           <ListItemText primary={'Experience'} />
         </ListItemButton>
       </ListItem>
-      <ListItem key={'Education'} disablePadding>
+      {/* <ListItem key={'Education'} disablePadding>
         <ListItemButton
           onClick={() => {
             scrollToSection(refStore.educationRef);
@@ -89,7 +89,7 @@ function Navbar() {
         >
           <ListItemText primary={'Education'} />
         </ListItemButton>
-      </ListItem>
+      </ListItem> */}
       <Divider />
     </Box>
   );
@@ -168,7 +168,7 @@ function Navbar() {
                   Experience
                 </button>
               </li>
-              <li>
+              {/* <li>
                 <button
                   onClick={() => {
                     scrollToSection(refStore.educationRef);
@@ -177,7 +177,7 @@ function Navbar() {
                 >
                   Education
                 </button>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div

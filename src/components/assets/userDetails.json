@@ -174,14 +174,15 @@
       "github": "https://github.com/TheFastest599/ParcelPro",
       "live": "https://parcelpro.onrender.com"
     },
-    "Finance Tracker": {
-      "name": "Finance Tracker",
-      "description": "Finance Tracker is a personal finance management application that helps users track their income and expenses. It allows users to categorize their transactions, view their financial history, and generate reports to analyze their spending habits. The application is built using Next Js, Zustard, Mongo DB, Shadcn, Tailwind CSS, Recharts and provides a user-friendly interface for managing finances.",
-      "image": "/assests/projects/financetracker.jpg",
-      "stack": ["Next.js", "MongoDB", "Shadcn", "Tailwind CSS"],
-      "github": "https://github.com/TheFastest599/Personal-Finance-Visualizer",
-      "live": "https://finance-visualize.vercel.app"
+    "Markdown Render": {
+      "name": "Markdown Render",
+      "description": "Markdown Render is a dedicated markdown reader designed for developers and students. It allows users to load and read markdown notes, research papers, and documentation with a clean reading-focused interface. The application features advanced LaTeX rendering to fix broken math formulas often found in AI-exported markdown files, along with syntax highlighting and diagram support. Built with Next.js, React, Tailwind CSS, DaisyUI, KaTeX, Prism.js, and Mermaid, it provides a seamless reading experience with persistent sessions and PDF export.",
+      "image": "/assests/projects/markdownrender.jpg",
+      "stack": ["Next.js", "Tailwind CSS"],
+      "github": "https://github.com/TheFastest599/markdown-render",
+      "live": "https://markdownrender.vercel.app"
     },
+
     "Vehicle Tracker": {
       "name": "Vehicle Tracker",
       "description": "Advanced Real-time Vehicle Tracking System powered by authentic GPX route data from Bengal College of Engineering and Technology to Durgapur Railway Station. Experience realistic vehicle simulation using actual GPS coordinates recorded from a real journey.",
@@ -355,6 +356,11 @@
       "duration": "November 2023 - Present",
       "link": "https://codevision-bcet.web.app",
       "positions": [
+        {
+          "period": "August 2025",
+          "tittle": "Governor",
+          "description": "As the Governor of Code Vision at Bengal College of Engineering & Technology (BCET), Durgapur, I lead the organization in fostering a vibrant coding culture among students. My role involves overseeing the planning and execution of various coding events, workshops, and seminars to enhance the technical skills and knowledge of our members. I am dedicated to creating an inclusive and engaging environment that encourages collaboration, innovation, and continuous learning within the coding community."
+        },
         {
           "period": "August 2024",
           "tittle": "Organiser",

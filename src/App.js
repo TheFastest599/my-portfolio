@@ -51,7 +51,7 @@ function App() {
         <Skills></Skills>
         <Projects></Projects>
         <Experience></Experience>
-        <Education></Education>
+        {/* <Education></Education> */}
         <SiteVisits> </SiteVisits>
         <Contactus></Contactus>
       </div>
