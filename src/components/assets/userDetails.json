@@ -149,13 +149,30 @@
       ],
       "video": "https://www.youtube.com/watch?v=WlCMqtsla1k"
     },
-    "Code Vision Website": {
-      "name": "Code Vision Website",
-      "description": "Code Vision is a coding club at Bengal College of Engineering and Technology (BCET), Durgapur. This club serves as a platform for students to learn and enhance their coding skills through various events, workshops, and seminars. It provides information about upcoming events, resources, and a community for coding enthusiasts. The website is easily discoverable on Google under keywords such as 'Code Vision BCET', 'BCET Code Vision', and similar search terms.",
-      "image": "/assests/projects/codevision.jpg",
-      "stack": ["React.js", "Tailwind CSS", "Firebase"],
-      "github": "",
-      "live": "https://codevision-bcet.web.app/"
+    "FlowTrack": {
+      "name": "FlowTrack",
+      "description": "The ultimate enterprise project and task management system. Manage teams, track progress, and boost productivity with our scalable, secure platform.",
+      "image": "/assests/projects/flowtrack.jpg",
+      "stack": [
+        "Next.js",
+        "Python",
+        "Fast API",
+        "PostgreSQL",
+        "Docker",
+        "Zustand",
+        "Tanstack Query"
+      ],
+      "github": "https://github.com/TheFastest599/flowtrack",
+      "live": "https://flowtrack-one.vercel.app",
+      "video": "https://youtu.be/ZEyKh5ad7Pk"
+    },
+    "ParcelPro": {
+      "name": "ParcelPro",
+      "description": "ParcelPro is a courier management system built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It streamlines courier operations with features like secure user authentication, order placement and tracking, real-time status updates, and email notifications. Designed to improve operational efficiency and user experience, ParcelPro is a modern solution for the logistics industry.",
+      "image": "/assests/projects/parcelpro.jpg",
+      "stack": ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+      "github": "https://github.com/TheFastest599/ParcelPro",
+      "live": "https://parcelpro.onrender.com"
     },
     "My Notebook": {
       "name": "MyNotebook",
@@ -165,15 +182,15 @@
       "github": "https://github.com/TheFastest599/mynotebook",
       "live": "https://mynotebook-backend-817b.onrender.com"
     },
-
-    "ParcelPro": {
-      "name": "ParcelPro",
-      "description": "ParcelPro is a courier management system built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It streamlines courier operations with features like secure user authentication, order placement and tracking, real-time status updates, and email notifications. Designed to improve operational efficiency and user experience, ParcelPro is a modern solution for the logistics industry.",
-      "image": "/assests/projects/parcelpro.jpg",
-      "stack": ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-      "github": "https://github.com/TheFastest599/ParcelPro",
-      "live": "https://parcelpro.onrender.com"
+    "Code Vision Website": {
+      "name": "Code Vision Website",
+      "description": "Code Vision is a coding club at Bengal College of Engineering and Technology (BCET), Durgapur. This club serves as a platform for students to learn and enhance their coding skills through various events, workshops, and seminars. It provides information about upcoming events, resources, and a community for coding enthusiasts. The website is easily discoverable on Google under keywords such as 'Code Vision BCET', 'BCET Code Vision', and similar search terms.",
+      "image": "/assests/projects/codevision.jpg",
+      "stack": ["React.js", "Tailwind CSS", "Firebase"],
+      "github": "",
+      "live": "https://codevision-bcet.web.app/"
     },
+
     "Markdown Render": {
       "name": "Markdown Render",
       "description": "Markdown Render is a dedicated markdown reader designed for developers and students. It allows users to load and read markdown notes, research papers, and documentation with a clean reading-focused interface. The application features advanced LaTeX rendering to fix broken math formulas often found in AI-exported markdown files, along with syntax highlighting and diagram support. Built with Next.js, React, Tailwind CSS, DaisyUI, KaTeX, Prism.js, and Mermaid, it provides a seamless reading experience with persistent sessions and PDF export.",
