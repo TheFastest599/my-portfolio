@@ -1,7 +1,7 @@
 {
   "name": "Anirban Saha",
   "age": 20,
-  "description": "Hello there! 👋 I am a B.Tech CSE '26 undergraduate student at Bengal\nCollege of Engineering and Technology (BCET), Durgapur, West Bengal. I am\nvery passionate about coding and love solving problems. I am a full\nstack developer and I love computer science!",
+  "description": "Hello there! 👋 I'm Anirban Saha, a B.Tech CSE '26 student at Bengal College of Engineering and Technology (BCET), Durgapur, West Bengal. I'm a full-stack developer skilled in MERN, FastAPI, Django, React, and Next.js. Currently interning at ZRC Media Network and Meridian Voyage, I've built projects like FlowTrack, Axiom Pulse Clone, and DOST-MCP, achieving high performance and real-time features. Let's connect!",
   "socials": {
     "linkedin": "https://www.linkedin.com/in/anirban-saha-245640256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "twitter": "https://x.com/TheFastest599?t=H4qU5U8gNTFAC535YR2nJQ&s=09",
@@ -26,6 +26,7 @@
       "name": "Javascript",
       "image": "/assests/skills/javascript.png"
     },
+
     "React.js": {
       "name": "React.js",
       "image": "/assests/skills/react.png"
@@ -41,6 +42,19 @@
     "Tailwind CSS": {
       "name": "Tailwind CSS",
       "image": "/assests/skills/tailwindcss.png"
+    },
+    "Shadcn UI": {
+      "name": "Shadcn UI",
+      "image": "/assests/skills/shadcnui.png"
+    },
+
+    "Zustand": {
+      "name": "Zustand",
+      "image": "/assests/skills/zustand.png"
+    },
+    "WebSocket": {
+      "name": "WebSocket",
+      "image": "/assests/skills/websocket.png"
     },
     "Node.js": {
       "name": "Node.js",
@@ -66,10 +80,7 @@
       "name": "Django",
       "image": "/assests/skills/django.png"
     },
-    "Pandas Python": {
-      "name": "Pandas Python",
-      "image": "/assests/skills/pandas.png"
-    },
+
     "MongoDB": {
       "name": "MongoDB",
       "image": "/assests/skills/mongodb.png"
@@ -82,26 +93,9 @@
       "name": "PostgreSQL",
       "image": "/assests/skills/postgresql.png"
     },
-
-    "GitHub": {
-      "name": "GitHub",
-      "image": "/assests/skills/github.png"
-    },
-    "Git": {
-      "name": "Git",
-      "image": "/assests/skills/git.png"
-    },
-    "Docker": {
-      "name": "Docker",
-      "image": "/assests/skills/docker.png"
-    },
-    "Nginx": {
-      "name": "Nginx",
-      "image": "/assests/skills/nginx.png"
-    },
-    "Firebase": {
-      "name": "Firebase",
-      "image": "/assests/skills/firebase.png"
+    "Redis": {
+      "name": "Redis",
+      "image": "/assests/skills/redis.png"
     },
     "C": {
       "name": "C",
@@ -112,6 +106,7 @@
     "HTML",
     "CSS",
     "Javascript",
+    "TypeScript",
     "React.js",
     "Next.js",
     "Bootstrap",
@@ -131,7 +126,10 @@
     "Docker",
     "Nginx",
     "Firebase",
-    "C"
+    "C",
+    "Redux Toolkit",
+    "Zustand",
+    "WebSocket"
   ],
   "projects": {
     "Meridian Voyage": {
@@ -147,7 +145,8 @@
         "Daisy UI",
         "PostgreSQL"
       ],
-      "video": "https://www.youtube.com/watch?v=WlCMqtsla1k"
+      "video": "https://www.youtube.com/watch?v=WlCMqtsla1k",
+      "live": "https://meridianvoyage.com"
     },
     "FlowTrack": {
       "name": "FlowTrack",
@@ -166,6 +165,21 @@
       "live": "https://flowtrack-one.vercel.app",
       "video": "https://youtu.be/ZEyKh5ad7Pk"
     },
+    "Axiom Pulse Clone": {
+      "name": "Axiom Pulse Clone",
+      "description": "Axiom Pulse Clone is a real-time team collaboration and communication platform designed to enhance productivity and streamline workflows. Built with Next.js and FastAPI, it offers features like instant messaging, task management, file sharing, and video conferencing. The application utilizes WebSocket for real-time updates, ensuring seamless interaction among team members. With a focus on user experience and scalability, Axiom Pulse Clone is an ideal solution for modern teams seeking efficient collaboration tools.",
+      "image": "/assests/projects/axiompulseclone.jpg",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Redux Toolkit",
+        "WebSocket",
+        "Express.js"
+      ],
+      "github": "https://github.com/TheFastest599/Axiom-Pulse-Page-Clone",
+      "live": "https://axiom-pulse-clone-trade.vercel.app",
+      "video": "https://youtu.be/6KojRs_YOgY"
+    },
     "ParcelPro": {
       "name": "ParcelPro",
       "description": "ParcelPro is a courier management system built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It streamlines courier operations with features like secure user authentication, order placement and tracking, real-time status updates, and email notifications. Designed to improve operational efficiency and user experience, ParcelPro is a modern solution for the logistics industry.",
@@ -182,15 +196,6 @@
       "github": "https://github.com/TheFastest599/mynotebook",
       "live": "https://mynotebook-backend-817b.onrender.com"
     },
-    "Code Vision Website": {
-      "name": "Code Vision Website",
-      "description": "Code Vision is a coding club at Bengal College of Engineering and Technology (BCET), Durgapur. This club serves as a platform for students to learn and enhance their coding skills through various events, workshops, and seminars. It provides information about upcoming events, resources, and a community for coding enthusiasts. The website is easily discoverable on Google under keywords such as 'Code Vision BCET', 'BCET Code Vision', and similar search terms.",
-      "image": "/assests/projects/codevision.jpg",
-      "stack": ["React.js", "Tailwind CSS", "Firebase"],
-      "github": "",
-      "live": "https://codevision-bcet.web.app/"
-    },
-
     "Markdown Render": {
       "name": "Markdown Render",
       "description": "Markdown Render is a dedicated markdown reader designed for developers and students. It allows users to load and read markdown notes, research papers, and documentation with a clean reading-focused interface. The application features advanced LaTeX rendering to fix broken math formulas often found in AI-exported markdown files, along with syntax highlighting and diagram support. Built with Next.js, React, Tailwind CSS, DaisyUI, KaTeX, Prism.js, and Mermaid, it provides a seamless reading experience with persistent sessions and PDF export.",
@@ -198,6 +203,14 @@
       "stack": ["Next.js", "Tailwind CSS"],
       "github": "https://github.com/TheFastest599/markdown-render",
       "live": "https://markdownrender.vercel.app"
+    },
+    "Code Vision Website": {
+      "name": "Code Vision Website",
+      "description": "Code Vision is a coding club at Bengal College of Engineering and Technology (BCET), Durgapur. This club serves as a platform for students to learn and enhance their coding skills through various events, workshops, and seminars. It provides information about upcoming events, resources, and a community for coding enthusiasts. The website is easily discoverable on Google under keywords such as 'Code Vision BCET', 'BCET Code Vision', and similar search terms.",
+      "image": "/assests/projects/codevision.jpg",
+      "stack": ["React.js", "Tailwind CSS", "Firebase"],
+      "github": "",
+      "live": "https://codevision-bcet.web.app/"
     },
 
     "Vehicle Tracker": {
@@ -342,51 +355,28 @@
   },
   "experienceNew": [
     {
+      "organisation": "ZRC Media Network",
+      "logo": "/assests/experience/zrc_media_network.jpg",
+      "duration": "September 2025 - Present",
+      "link": "https://zrcmedianetwork.com",
+      "positions": [
+        {
+          "period": "February 2025",
+          "tittle": "Full Stack Developer Intern",
+          "description": "As a Full Stack Developer Intern at ZRC Media Network, I contribute to the development and maintenance of web applications, collaborate with design, marketing, and operations teams to integrate technical solutions, write clean and efficient code, and support troubleshooting and system upgrades. Key benefits include flexible working hours, weekly offs on Mondays, and potential conversion to a full-time role based on performance."
+        }
+      ]
+    },
+    {
       "organisation": "Meridian Voyage",
       "logo": "/assests/experience/meridian_voyage.jpg",
       "duration": "February 2025 - May 2025",
       "link": "https://www.meridianvoyage.com",
       "positions": [
         {
-          "period": "February 2025",
-          "tittle": "Python Developer Intern",
-          "description": "As a Python Intern at Meridian Voyage, I primarily focus on building modern, responsive, and user-friendly client-side applications and dashboards. Leveraging my expertise in web development, I design and implement intuitive interfaces that enhance user experience. In addition to front-end development, I contribute to backend integration by building APIs using Python to streamline data communication and integration between systems. I have also worked on creating datasets through web scraping and bot technologies, enabling efficient data collection. Furthermore, I utilize Python libraries such as Pandas and NumPy for data analysis and design dashboards for Business Intelligence, providing actionable insights and visual representations to support decision-making processes."
-        }
-      ]
-    },
-    {
-      "organisation": "Google Developer Groups on Campus BCET",
-      "logo": "/assests/experience/gdg_bcet.jpg",
-      "duration": "September 2024 - Present",
-      "link": "https://gdg.community.dev/gdg-on-campus-bengal-college-of-engineering-and-technology-durgapur-india/",
-      "positions": [
-        {
-          "period": "September 2024",
-          "tittle": "Web Lead",
-          "description": "As the Web Development Team Lead for Google Developer Groups on Campus BCET, I bring a solid foundation in web development acquired through my college studies. I am eager to lead and inspire a community of talented developers, leveraging my skills to create innovative and impactful projects. Let's build something extraordinary together!"
-        }
-      ]
-    },
-    {
-      "organisation": "Code Vision BCET",
-      "logo": "/assests/experience/code_vision.jpg",
-      "duration": "November 2023 - Present",
-      "link": "https://codevision-bcet.web.app",
-      "positions": [
-        {
-          "period": "August 2025",
-          "tittle": "Governor",
-          "description": "As the Governor of Code Vision at Bengal College of Engineering & Technology (BCET), Durgapur, I lead the organization in fostering a vibrant coding culture among students. My role involves overseeing the planning and execution of various coding events, workshops, and seminars to enhance the technical skills and knowledge of our members. I am dedicated to creating an inclusive and engaging environment that encourages collaboration, innovation, and continuous learning within the coding community."
-        },
-        {
-          "period": "August 2024",
-          "tittle": "Organiser",
-          "description": "At Code Vision, BCET, I take the lead in organizing coding events, workshops, and seminars to cultivate a vibrant and engaging coding culture among students."
-        },
-        {
-          "period": "November 2023",
-          "tittle": "Coordinator",
-          "description": "At Code Vision, BCET, I serve as a Coordinator, organizing coding events, workshops, and seminars to foster a strong coding culture among students."
+          "period": "September 2025",
+          "tittle": "Python/React Developer Intern",
+          "description": "As a Python/React Developer Intern at Meridian Voyage, I primarily focus on building modern, responsive, and user-friendly client-side applications and dashboards. Leveraging my expertise in web development, I design and implement intuitive interfaces that enhance user experience. In addition to front-end development, I contribute to backend integration by building APIs using Python to streamline data communication and integration between systems. I have also worked on creating datasets through web scraping and bot technologies, enabling efficient data collection. Furthermore, I utilize Python libraries such as Pandas and NumPy for data analysis and design dashboards for Business Intelligence, providing actionable insights and visual representations to support decision-making processes."
         }
       ]
     }
