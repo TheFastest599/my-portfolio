@@ -1,7 +1,7 @@
 {
   "name": "Anirban Saha",
   "age": 20,
-  "description": "Hello there! 👋 I'm Anirban Saha, a B.Tech CSE '26 student at Bengal College of Engineering and Technology (BCET), Durgapur, West Bengal. I'm a full-stack developer skilled in MERN, FastAPI, Django, React, and Next.js. Currently interning at ZRC Media Network and Meridian Voyage, I've built projects like FlowTrack, Axiom Pulse Clone, and DOST-MCP, achieving high performance and real-time features. Let's connect!",
+  "description": "Hello there! 👋 I'm Anirban Saha, a B.Tech CSE '26 student at Bengal College of Engineering and Technology (BCET), Durgapur, West Bengal. I'm a full-stack developer skilled in MERN, FastAPI, Django, React, and Next.js. Currently interning at ZRC Media Network, I've built projects like FlowTrack, Axiom Pulse Clone, and DOST-MCP, achieving high performance and real-time features. Let's connect!",
   "socials": {
     "linkedin": "https://www.linkedin.com/in/anirban-saha-245640256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "twitter": "https://x.com/TheFastest599?t=H4qU5U8gNTFAC535YR2nJQ&s=09",
@@ -167,7 +167,7 @@
     },
     "Axiom Pulse Clone": {
       "name": "Axiom Pulse Clone",
-      "description": "Axiom Pulse Clone is a real-time team collaboration and communication platform designed to enhance productivity and streamline workflows. Built with Next.js and FastAPI, it offers features like instant messaging, task management, file sharing, and video conferencing. The application utilizes WebSocket for real-time updates, ensuring seamless interaction among team members. With a focus on user experience and scalability, Axiom Pulse Clone is an ideal solution for modern teams seeking efficient collaboration tools.",
+      "description": "A comprehensive real-time token tracking platform clone replicating Axiom Pulse, featuring three-column lifecycle stages with WebSocket-powered live updates and intelligent scoring algorithms. Achieved excellent performance scores (95+ Lighthouse) through virtual scrolling, memoized Redux selectors, and optimized rendering, handling 90+ tokens with real-time delta synchronization. Implemented full-stack architecture with Next.js frontend and Express/WebSocket backend, demonstrating advanced state management, responsive design, and scalable real-time data simulation. Deployed on Vercel, featuring mobile-first responsive layouts, TypeScript coverage, and modern React patterns for production-ready trading interfaces.",
       "image": "/assests/projects/axiompulseclone.jpg",
       "stack": [
         "Next.js",
@@ -361,7 +361,7 @@
       "link": "https://zrcmedianetwork.com",
       "positions": [
         {
-          "period": "February 2025",
+          "period": "September 2025",
           "tittle": "Full Stack Developer Intern",
           "description": "As a Full Stack Developer Intern at ZRC Media Network, I contribute to the development and maintenance of web applications, collaborate with design, marketing, and operations teams to integrate technical solutions, write clean and efficient code, and support troubleshooting and system upgrades. Key benefits include flexible working hours, weekly offs on Mondays, and potential conversion to a full-time role based on performance."
         }
@@ -374,7 +374,7 @@
       "link": "https://www.meridianvoyage.com",
       "positions": [
         {
-          "period": "September 2025",
+          "period": "February 2025",
           "tittle": "Python/React Developer Intern",
           "description": "As a Python/React Developer Intern at Meridian Voyage, I primarily focus on building modern, responsive, and user-friendly client-side applications and dashboards. Leveraging my expertise in web development, I design and implement intuitive interfaces that enhance user experience. In addition to front-end development, I contribute to backend integration by building APIs using Python to streamline data communication and integration between systems. I have also worked on creating datasets through web scraping and bot technologies, enabling efficient data collection. Furthermore, I utilize Python libraries such as Pandas and NumPy for data analysis and design dashboards for Business Intelligence, providing actionable insights and visual representations to support decision-making processes."
         }
